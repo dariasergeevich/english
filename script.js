@@ -8,7 +8,7 @@ const words = [
   ['to hold with', 'быть согласным с чем-то, поддерживать какую-то идею'],
   ['to expect', 'ожидать'],
   ['hardly', 'едва'],
-  ['although', 'хотя, однако'],
+  ['although', 'хотя, однако, на "a"'],
   ['nearly', 'почти'],
   ['to crane', 'вытягивать шею'],
   ['fence', 'забор'],
@@ -97,7 +97,7 @@ const words = [
   ['sharply', 'резко'],
   ['to mumble', 'бормотать (на "mum")'],
   ['to purse', 'поджимать, морщить'],
-  ['to dare', 'смеливаться, посметь'],
+  ['to dare', 'oсмеливаться, посметь'],
   ['stiffly', 'чопорно'],
   ['common', 'распространенный, общий'],
   ['heart sinking', 'сердце замирает'],
@@ -127,6 +127,63 @@ const words = [
   ['it seem to be', 'кажется, это...'],
   ['to flick', 'щелкнуть, на "f"'],
   ['heady', 'опрометчивый, безрассудный'],
+  ['pavement', 'тротуар'],
+  ['to slip', 'сколькить (4 буквы)'],
+  ['set off', 'отправляться'],
+  ['fancy', 'причудливый, фантазия'],
+  ['rather', 'скорее (вводное слово)'],
+  ['severe', 'суровый'],
+  ['to ruffle', 'взъерошить'],
+  ['distinctly', 'отчетливо, внятно'],
+  ['dozen', 'дюжина'],
+  ['to sniff', 'нюхать'],
+  ['impatiently', 'нетерпеливо'],
+  ['be bound to', 'обязательно (словосочетание)'],
+  ['bound', 'связанный'],
+  ['i will bet', 'могу поспорить...'],
+  ['precious', 'бесценный. драгоценный'],
+  ['to swap', 'обмениваться'],
+  ['downright', 'явно'],
+  ['careless', 'беспечный, неосторожный'],
+  ['sideway glance', 'косой взгляд (словосочетание)'],
+  ['very day', 'тот самый день (словосочетание)'],
+  ['surely', 'конечно'],
+  ['to persuade', 'убеждать'],
+  ['proper', 'правильный'],
+  ['nonsense', 'чепуха'],
+  ['to flinch', 'вздрагивать, на "f"'],
+  ['exasperate', 'раздраженный'],
+  ['to admire', 'восхищаться'],
+  ['to flatter', 'льстить'],
+  ['noble', 'благородный'],
+  ['to blush', 'краснеть'],
+  ['earmuffs', 'наушники'],
+  ['anxious', 'тревожный, озадаченный'],
+  ['to pierce', 'прокалывать'],
+  ['piercing stare', 'пронзительный взгляд'],
+  ['plain', 'простой'],
+  ['however', 'однако'],
+  ['drop', 'леденец, капля'],
+  ['to turn up', 'оказаться'],
+  ['to bow', 'кланяться'],
+  ['bow', 'лук (оружие)'],
+  ['to gasp', 'дышать с трудом (одно слово)'],
+  ['to pat on', 'похлопать по...'],
+  ['to reach out', 'дотянуться'],
+  ['to tremble', 'дрожать, на "t"'],
+  ['somehow', 'как-то'],
+  ['to nod', 'кивать'],
+  ['glum', 'угрюмый'],
+  ['to falter', 'запинаться'],
+  ['to astound', 'поражать'],
+  ['in the name of heaven', 'во имя небес'],
+  ['handkerсhief', 'носовой платок'],
+  ['lace', 'кружево'],
+  ['pull out', 'вытаскивать'],
+  ['to dab', 'вытирать, на "d"'],
+  ['beneath', 'под'],
+  ['to examine', 'исследовать, изучать'],
+  ['though', 'хотя, на "t"'],
   ]
 
   let buttonCheck = document.querySelector('.check-btn');
@@ -139,22 +196,19 @@ const words = [
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
   let randIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randIndex][1];
-  console.log(words[randIndex][0]);
   return words[randIndex][0];
 }
 
 function checkAnswer(word) { //провеяет соотвествие английского слова и поля ввода
   engWord.textContent = word;
   console.log(word)
-  if (input.value === word) {
+  if (input.value.toLowerCase() === word) {
     comment.textContent = 'Success!';
     comment.classList.add('green')
     input.value = '';
-    console.log(input.value)
   }else{
     comment.textContent = 'Wrong :(';
     comment.classList.add('red')
-    console.log(input.value)
   }
 }
 
@@ -165,7 +219,6 @@ buttonNext.addEventListener('click', function(){
   comment.textContent = '';
   input.value = '';
   engWord.textContent = '';
-  console.log(input.value);
   location.reload()
   
 })
