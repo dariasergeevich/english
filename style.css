@@ -1,0 +1,73 @@
+.page {
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: rgb(245, 245, 220);
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .page {
+      max-width: calc(100% - 96px);
+    }
+  }
+  @media (min-width: 426px) and (max-width: 768px) {
+    .page {
+      max-width: calc(100% - 48px);
+    }
+  }
+  @media (max-width: 426px) {
+    .page {
+      max-width: calc(100% - 32px);
+      padding-top: 16px;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-top: 20%;
+  }
+
+  .btn {
+    background-color: #fffdd0;
+    margin-bottom: 250px;
+    width: 192px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.check-btn {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 192px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.rus_word {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red
+}
