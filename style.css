@@ -71,3 +71,33 @@
 .red {
     color: red
 }
+
+.hidden {
+  display: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+  justify-content:space-between
+}
+
+.correct {
+  border: 2px solid green;
+  width: 60px;
+  height: 60px;
+}
+
+.wrong {
+  border: 2px solid red;
+  width: 60px;
+  height: 60px;
+}
+
+.count {
+  text-align: center;
+margin-top: 17px;
+font-size: 24px;
+line-height: 1.2;
+}
