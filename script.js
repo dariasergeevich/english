@@ -651,7 +651,7 @@ const words = [
 ['funds', 'средства'],
   ]
 
-   let buttonCheck = document.querySelector('.check-btn');
+  let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
   let buttonNext = document.querySelector('.next-btn');
   let comment = document.querySelector('.comment');
@@ -677,7 +677,6 @@ function checkAnswer() { //провеяет соотвествие англий�
     comment.classList.add('green');
     comment.classList.remove('red');
     correctCount.textContent = Number(correctCount.textContent) + 1;
-    input.value = '';
   }else{
     comment.textContent = 'Wrong :(';
     comment.classList.add('red');
@@ -688,6 +687,9 @@ function checkAnswer() { //провеяет соотвествие англий�
 
 
 buttonNext.addEventListener('click', function(){
+  if (input.value === '') {
+    wrongCount.textContent = Number(wrongCount.textContent) + 1;
+  }
   engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
