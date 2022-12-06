@@ -651,43 +651,51 @@ const words = [
 ['funds', 'средства'],
   ]
 
-  let buttonCheck = document.querySelector('.check-btn');
+   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
   let buttonNext = document.querySelector('.next-btn');
   let comment = document.querySelector('.comment');
   let input = document.querySelector('.input');
   let engWord = document.querySelector('.eng_word');
 
+  let correctCount = document.querySelector('.correct-count');
+  let wrongCount = document.querySelector('.wrong-count');
+
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
   let randIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randIndex][1];
+  engWord.textContent = words[randIndex][0];
   return words[randIndex][0];
 }
 
-function checkAnswer(word) { //провеяет соотвествие английского слова и поля ввода
-  engWord.textContent = word;
-  console.log(word)
-  if (input.value.toLowerCase() === word) {
+getRandomWord(words);
+
+function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
+  engWord.classList.remove('hidden')
+  if (input.value.toLowerCase() === engWord.textContent) {
     comment.textContent = 'Success!';
-    comment.classList.add('green')
+    comment.classList.add('green');
+    comment.classList.remove('red');
+    correctCount.textContent = Number(correctCount.textContent) + 1;
     input.value = '';
   }else{
     comment.textContent = 'Wrong :(';
-    comment.classList.add('red')
+    comment.classList.add('red');
+    comment.classList.remove('green');
+    wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
 }
 
-const randomWord = getRandomWord(words);
-
 
 buttonNext.addEventListener('click', function(){
+  engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
   engWord.textContent = '';
-  location.reload()
+  getRandomWord(words);
   
 })
 
 buttonCheck.addEventListener('click', function(){
-  checkAnswer(randomWord);
+  checkAnswer();
 })
