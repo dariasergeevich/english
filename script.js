@@ -38,9 +38,9 @@ const words = [
   ['traffic jam', 'дорожная пробка'],
   ['cloak', 'плащ'],
   ['get-ups', 'прически'],
-  ['to suppose', 'предполагать'],
+  ['to suppose', 'предполагать, на "s"'],
   ['steering wheel', 'руль машины'],
-  ['huddle', 'кучка'],
+  ['huddle', 'кучка, на "h"'],
   ['weirdos', 'чудаки'],
   ['to enrage', 'приводить в ярость'],
   ['struck', 'пораженный'],
@@ -654,7 +654,50 @@ const words = [
 ['plaster', 'гипс, штукатурка'],
 ['puddles', 'лужи'],
 ['to steer', 'управлять, на "s"'],
-['superb', 'великолепный. на "su"']
+['superb', 'великолепный. на "su"'],
+['remarkable', 'замечательно. на "r"'],
+['to assume', 'предполагать, на "a"'],
+['janitor', 'дворник'],
+['humble', 'скромный'],
+['attitude', 'отношение, жизненная позиция, на "a"'],
+['occasionally', 'иногда, на "o"'],
+['to tease', 'дразнить'],
+['for instance', 'например'],
+['to phrase', 'формулировать'],
+['jock', 'качок'],
+['chart', 'диаграмма'],
+['to tattle', 'болтать'],
+['to respond', 'отликаться, отвечать'],
+['ramification', 'разветвление, развилка'],
+['whiny', 'плаксивый'],
+['squabble', 'перебранка, ссора'],
+['to drag', 'тащить, тянуть'],
+['bunch', 'кучка, на "b"'],
+['malcontent', 'недовольный'],
+['slope', 'склон'],
+['slippery', 'скользкий'],
+['to suture', 'зашить, сшить'],
+['lapdog', 'собачонка'],
+['freckles', 'веснушки'],
+['to hang out with', 'тусоваться с...'],
+['surgeon', 'хирург'],
+['tricky', 'хитрый'],
+['plague', 'зараза, чума'],
+['grace', 'изящество, милосердие'],
+['ligament', 'связка, сухожилие'],
+['to braid', 'заплетать (волосы)'],
+['cushion', 'подушка (диванная)'],
+['to plop', 'шлепнуться'],
+['to bust', 'разориться'],
+['to hop off', 'спрыгнуть'],
+['to go ahead', 'идти вперед'],
+['renewal', 'обновление'],
+['acceptance', 'принятие'],
+['enema', 'клизма'],
+['conviction', 'убеждение, взгляды, на "c"'],
+['dazzling', 'ослепительный'],
+['in advance', 'заранее'],
+['marvellous', 'чудесный, на "m"'],
   ]
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
@@ -670,10 +713,12 @@ function getRandomWord(words) { //выбирает рандомное слово
   let randIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randIndex][1];
   engWord.textContent = words[randIndex][0];
+  word.setAttribute('index', randIndex)
   return words[randIndex][0];
 }
 
 getRandomWord(words);
+to();
 
 function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
   engWord.classList.remove('hidden')
@@ -690,8 +735,22 @@ function checkAnswer() { //провеяет соотвествие англий�
   }
 }
 
+function deleteWord () {
+  const index = word.getAttribute('index');
+words.splice(index, 1)
+}
+
+function to () {
+if (engWord.textContent.includes('to ')) {
+  input.value = 'to '
+}
+}
 
 buttonNext.addEventListener('click', function(){
+  if (input.value === '' && comment.textContent === 'Wrong :(') {
+    wrongCount.textContent = Number(wrongCount.textContent) - 1;
+  }
+
   if (input.value === '') {
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
@@ -699,8 +758,13 @@ buttonNext.addEventListener('click', function(){
   comment.textContent = '';
   input.value = '';
   engWord.textContent = '';
+
+  if (comment.textContent === 'Success!') {
+    deleteWord ()
+  }
+
   getRandomWord(words);
-  
+  to()
 })
 
 buttonCheck.addEventListener('click', function(){
