@@ -26,7 +26,7 @@ const words = [
   ['to peck', 'клевать'],
   ['briefcase', 'портфель'],
   ['tantrum', 'истерика'],
-  ['to chortle', 'усмехнуться'],
+  ['to chortle', 'усмехнуться, на "c"'],
   ['to back out', 'покидать, отступать'],
   ['sign', 'знак'],
   ['peculiar', 'специфичный, своеобразный'],
@@ -126,8 +126,8 @@ const words = [
   ['to flick', 'щелкнуть, на "f"'],
   ['heady', 'опрометчивый, безрассудный'],
   ['pavement', 'тротуар'],
-  ['to slip', 'сколькить (4 буквы)'],
-  ['set off', 'отправляться'],
+  ['to slip', 'скользить (4 буквы)'],
+  ['to set off', 'отправляться'],
   ['fancy', 'причудливый, фантазия'],
   ['rather', 'скорее (вводное слово)'],
   ['severe', 'суровый'],
@@ -281,7 +281,7 @@ const words = [
 ['ought', 'должен'],
 ['slug', 'слизень'],
 ['for a change', 'для разнообразия'],
-['to snarle', 'рычать'],
+['to snarl', 'рычать'],
 ['to blow up', 'взрываться'],
 ['to screw up face', 'скривить лицо'],
 ['to wail', 'вопить'],
@@ -327,7 +327,7 @@ const words = [
 ['to tap', 'постучаться'],
 ['to order', 'приказывать, заказывать'],
 ['knuckle', 'сустав пальца'],
-['smartly', 'ловко'],
+['smartly', 'ловко (придумать, найти решение)'],
 ['to snooze', 'дремать'],
 ['to shuffle', 'шаркать'],
 ['intenly', 'интенсивно'],
@@ -400,7 +400,7 @@ const words = [
 ['to flip', 'перевернуть, на "f"'],
 ['to snort', 'фыркнуть'],
 ['whelk', 'щенок'],
-['to unfold', 'раскрывать, на "a"'],
+['to unfold', 'раскрывать, на "u"'],
 ['to snatch', 'хватать, на "s"'],
 ['to sneer', 'насмехаться'],
 ['to glance', 'взглянуть'],
@@ -571,7 +571,7 @@ const words = [
 ['cornerstone', 'камень преткновения'],
 ['tape', 'лента'],
 ['to lead', 'вести что-либо'],
-['to get down buisness', 'приступить к делу'],
+['to get down business', 'приступить к делу'],
 ['connotation', 'значение'],
 ['term', 'термин'],
 ['beside', 'рядом, на "b"'],
@@ -618,7 +618,7 @@ const words = [
 ['kidney', 'почка'],
 ['to justify', 'оправдать'],
 ['redemption', 'искупление'],
-['to replie', 'отвечать'],
+['to reply', 'отвечать'],
 ['to get aquainted', 'знакомиться'],
 ['al all costs', 'любой ценой'],
 ['engagement', 'помолвка'],
@@ -655,7 +655,6 @@ const words = [
 ['puddles', 'лужи'],
 ['to steer', 'управлять, на "s"']
   ]
-
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
   let buttonNext = document.querySelector('.next-btn');
