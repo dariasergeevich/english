@@ -116,7 +116,7 @@ const words = [
   ['high-heeled', 'на высоком каблуке'],
   ['buckle', 'пряжка, застежка'],
   ['as though', 'как будто'],
-  ['spectecles', 'очки'],
+  ['spectacles', 'очки'],
   ['crook', 'согнутый'],
   ['to rummage', 'рыться'],
   ['for some reason', 'по какой-то причине'],
@@ -376,7 +376,7 @@ const words = [
 ['straw', 'солома'],
 ['boater', 'лодочник'],
 ['gruff', 'грубо'],
-['to burst', 'взрываться (5 слов)'],
+['to burst', 'взрываться (5 букв)'],
 ['to burst into tears', 'разразиться слезами'],
 ['tub', 'ванная, бадья'],
 ['rag', 'тряпка'],
@@ -586,7 +586,7 @@ const words = [
 ['minority', 'меньшенство'],
 ['to redo', 'переделывать'],
 ['heist', 'ограбление'],
-['entreprenuar', 'предприниматель'],
+['entrepreneur', 'предприниматель'],
 ['against', 'против, на "a"'],
 ['to run', 'управлять'],
 ['profitable', 'прибыльный'],
@@ -652,7 +652,8 @@ const words = [
 ['scarcely', 'едва, на "s"'],
 ['fare', 'плата за проезд'],
 ['plaster', 'гипс, штукатурка'],
-['puddles', 'лужи']
+['puddles', 'лужи'],
+['to steer', 'управлять, на "s"']
   ]
 
   let buttonCheck = document.querySelector('.check-btn');
