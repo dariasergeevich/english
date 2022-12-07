@@ -653,7 +653,8 @@ const words = [
 ['fare', 'плата за проезд'],
 ['plaster', 'гипс, штукатурка'],
 ['puddles', 'лужи'],
-['to steer', 'управлять, на "s"']
+['to steer', 'управлять, на "s"'],
+['superb', 'великолепный. на "su"']
   ]
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
