@@ -651,7 +651,8 @@ const words = [
 ['funds', 'средства'],
 ['scarcely', 'едва, на "s"'],
 ['fare', 'плата за проезд'],
- ['plaster', 'гипс, штукатурка']
+['plaster', 'гипс, штукатурка'],
+['puddles', 'лужи']
   ]
 
   let buttonCheck = document.querySelector('.check-btn');
