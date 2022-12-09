@@ -75,7 +75,7 @@ const words = [
   ['squeaky', 'визгливый'],
   ['passers by', 'прохожие'],
   ['to rejoice', 'ликовать'],
-  ['rattle', 'грохот, хрип'],
+  ['rattle', 'грохот, хрип, на "ra"'],
   ['to spot', 'замечать (на "s")'],
   ['stern', 'суровый, на "st"'],
   ['to wonder', 'задаваться вопросом'],
@@ -94,7 +94,7 @@ const words = [
   ['sharp', 'острый'],
   ['sharply', 'резко'],
   ['to mumble', 'бормотать (на "mum")'],
-  ['to purse', 'поджимать, морщить'],
+  ['to purse', 'поджимать, морщить, на "p"'],
   ['to dare', 'oсмеливаться, посметь'],
   ['stiffly', 'чопорно'],
   ['common', 'распространенный, общий'],
@@ -191,7 +191,7 @@ const words = [
 ['to trust with', 'доверить что-либо (словосочетание)'],
 ['gringingly', 'неохотно'],
 ['tend to', 'склонный к...'],
-['rumble', 'грохот'],
+['rumble', 'грохот, на "ru"'],
 ['steadly', 'непрерывно'],
 ['headlight', 'фара'],
 ['roar', 'рев'],
@@ -232,7 +232,7 @@ const words = [
 ['engine', 'двигатель'],
 ['to blow nose', 'высморкаться'],
 ['to make out', 'разобрать, различить'],
-['to slink', 'красться, проскальзывать'],
+['to slink', 'красться, проскальзывать, на "s"'],
 ['to murmur', 'ворчать, шептать'],
 ['heel', 'каблук'],
 ['swish', 'шелест'],
@@ -323,7 +323,7 @@ const words = [
 ['glistening', 'блестящий'],
 ['to whin', 'скулить'],
 ['to budge', 'сдвинуться с места'],
-['to tap', 'постучаться'],
+['to tap', 'постучаться, на "t"'],
 ['to order', 'приказывать, заказывать'],
 ['knuckle', 'сустав пальца'],
 ['smartly', 'ловко (придумать, найти решение)'],
@@ -465,7 +465,7 @@ const words = [
 ['peak', 'пик'],
 ['to represent', 'представлять (шоу)'],
 ['threat', 'угроза'],
-['to crowl', 'красться'],
+['to crowl', 'красться, на "c"'],
 ['just so', 'просто чтобы...'],
 ['disregard', 'пренебрежение'],
 ['handful', 'горсть'],
@@ -528,7 +528,7 @@ const words = [
 ['autopsy', 'вскрытие трупа'],
 ['to scratch off', 'соскребать с...'],
 ['diversity', 'разнообразие'],
-['to mantade', 'уполномочить'],
+['to mandate', 'уполномочить'],
 ['punch', 'удар'],
 ['sturdy', 'крепкий'],
 ['consumer', 'потребитель'],
@@ -617,7 +617,7 @@ const words = [
 ['kidney', 'почка'],
 ['to justify', 'оправдать'],
 ['redemption', 'искупление'],
-['to reply', 'отвечать'],
+['to reply', 'отвечать, на "rep"'],
 ['to get aquainted', 'знакомиться'],
 ['at all costs', 'любой ценой'],
 ['engagement', 'помолвка'],
@@ -630,8 +630,8 @@ const words = [
 ['to suss out', 'раскусить'],
 ['to check out', 'проверить'],
 ['wiener', 'сарделька'],
-['ladder', 'естница, на "l"'],
-['to cuddle', 'бнимать, прижимать'],
+['ladder', 'лестница, на "l"'],
+['to cuddle', 'обнимать, прижимать'],
 ['to be in good terms', 'быть в хороших отношениях'],
 ['sacrifice', 'жертва'],
 ['rage', 'ярость'],
@@ -666,7 +666,7 @@ const words = [
 ['jock', 'качок'],
 ['chart', 'диаграмма'],
 ['to tattle', 'болтать'],
-['to respond', 'отликаться, отвечать'],
+['to respond', 'отликаться, отвечать, на "res"'],
 ['ramification', 'разветвление, развилка'],
 ['whiny', 'плаксивый'],
 ['squabble', 'перебранка, ссора'],
@@ -796,6 +796,7 @@ const words = [
 ['to refer', 'ссылаться (на что-то)'],
 ['terrific', 'потрясающе, на "t"'],
   ]
+
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
   let buttonNext = document.querySelector('.next-btn');
@@ -824,33 +825,38 @@ function checkAnswer() { //провеяет соотвествие англий�
     comment.classList.add('green');
     comment.classList.remove('red');
     correctCount.textContent = Number(correctCount.textContent) + 1;
+    buttonCheck.setAttribute('disabled', '');
+    buttonCheck.classList.add('disabled');
   }else{
     comment.textContent = 'Wrong :(';
     comment.classList.add('red');
     comment.classList.remove('green');
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
+    buttonCheck.setAttribute('disabled', '');
+    buttonCheck.classList.add('disabled');
   }
 }
 
 function deleteWord () {
   const index = word.getAttribute('index');
-  console.log(index)
 words.splice(index, 1);
-console.log(words)
 }
 
 function to () {
-if (engWord.textContent.includes('to ')) {
+  const word = engWord.textContent; 
+if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
   input.value = 'to '
 }
 }
 
 buttonNext.addEventListener('click', function(){
+  buttonCheck.removeAttribute('disabled');
+  buttonCheck.classList.remove('disabled')
   if (comment.textContent === 'Success!') {
     deleteWord ()
   }
   
-  if (input.value === '' && comment.textContent === 'Wrong :(') {
+  if (input.value === '' || input.value === 'to ' && comment.textContent === 'Wrong :(') {
     wrongCount.textContent = Number(wrongCount.textContent) - 1;
   }
 
