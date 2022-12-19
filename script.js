@@ -1118,4 +1118,4 @@ if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   to()
 }}
 
-document.addEventListener('keydown', pressEnter)
+//document.addEventListener('keydown', pressEnter)
