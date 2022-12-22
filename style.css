@@ -4,23 +4,6 @@
     background-color: rgb(245, 245, 220);
   }
 
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .page {
-      max-width: calc(100% - 96px);
-    }
-  }
-  @media (min-width: 426px) and (max-width: 768px) {
-    .page {
-      max-width: calc(100% - 48px);
-    }
-  }
-  @media (max-width: 426px) {
-    .page {
-      max-width: calc(100% - 32px);
-      padding-top: 16px;
-    }
-  }
-
   .column {
     display: flex;
     flex-direction: column;
