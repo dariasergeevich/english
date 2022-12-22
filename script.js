@@ -1118,7 +1118,10 @@ const words = [
 ['to destine', 'предназначать (судьбой)'],
 ['to gawp', 'глазеть, на gaw"'],
 ['laden', 'нагруженный (чем-то тяжелым)'],
+<<<<<<< HEAD
 ['mistress', 'любовница']
+=======
+>>>>>>> 8fa36e90f67be074b46d38d5be8ec644904a6c2d
   ]
 
   let buttonCheck = document.querySelector('.check-btn');
@@ -1226,4 +1229,4 @@ if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   to()
 }}
 
-document.addEventListener('keydown', pressEnter)
+//document.addEventListener('keydown', pressEnter)
