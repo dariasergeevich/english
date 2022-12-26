@@ -1166,6 +1166,7 @@ const words = [
 ['imperative', 'обязательный'],
 ['to head back', 'возвращаться'],
 ['to grab a coffee', 'захватить кофе (с собой)'],
+['accidentally', 'случайно'],
   ]
 
   let buttonCheck = document.querySelector('.check-btn');
