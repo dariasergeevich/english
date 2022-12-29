@@ -1118,7 +1118,6 @@ const words = [
 ['to destine', 'предназначать (судьбой)'],
 ['to gawp', 'глазеть, на gaw"'],
 ['laden', 'нагруженный (чем-то тяжелым)'],
-<<<<<<< HEAD
 ['mistress', 'любовница'],
 ['jaw', 'челюсть'],
 ['to vouch on', 'поручиться за…'],
@@ -1214,7 +1213,6 @@ const words = [
 ['urgent', 'срочный, неотложный'],
 ['aftermath', 'последствия'],
 ['injure', 'ранить, на "i"'],
-=======
 ['mistress', 'любовница'],
 ['jaw', 'челюсть'],
 ['to vouch on', 'поручиться за…'],
@@ -1264,7 +1262,6 @@ const words = [
 ['to head back', 'возвращаться'],
 ['to grab a coffee', 'захватить кофе (с собой)'],
 ['accidentally', 'случайно'],
->>>>>>> 88e3af9379e5c6484519229872251be73e5003bf
   ]
 
   let buttonCheck = document.querySelector('.check-btn');
