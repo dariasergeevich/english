@@ -1,3 +1,6 @@
+body {
+  margin: 0
+}
 .page {
     margin: 0 auto;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -93,4 +96,71 @@ line-height: 1.2;
 
 .disabled:hover {
   opacity: 0.4;
+}
+
+.menu {
+  background-color: rgb(245, 245, 220);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.menu_container {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.menu_header {
+  text-align: center;
+}
+
+.menu_btn {
+  width: 150px;
+  height: 70px;
+  border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu_row {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.btn1 {
+  background-color: #C3FBD8;
+}
+
+.btn2 {
+  background-color: #E7ECFF;
+  margin-left: 15px;
+}
+
+@media (max-width: 425px) {
+  .menu_row {
+    flex-direction: column;
+  }
+  .btn2 {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .menu_container {
+    margin-top: 20vh;
+  }
 }

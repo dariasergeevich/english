@@ -1,4 +1,6 @@
-const words = [
+const words0 = ['', ''];
+
+const words1 = [
   ['daily', 'ежедневный'],
   ['courage', 'смелость'],
   ['affair', 'связь'],
@@ -999,7 +1001,10 @@ const words = [
 ['to lean', 'опираться'],
 ['passage', 'коридор, проход'],
 ['to billow', 'вздыматься (дым)'],
-['mound', 'насыпь, холм'],
+['mound', 'насыпь, холм']
+];
+
+const words2 = [
 ['heap', 'куча, груда, на "h"'],
 ['to pile', 'сложить, нагромоздить, на "p"'],
 ['ravine', 'овраг'],
@@ -1701,6 +1706,14 @@ const words = [
   let correctCount = document.querySelector('.correct-count');
   let wrongCount = document.querySelector('.wrong-count');
 
+  let buttonArr1 = document.querySelector('.btn1');
+  let buttonArr2 = document.querySelector('.btn2');
+
+  let menu = document.querySelector('.menu');
+
+  let words = words2;
+
+
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
   let randIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randIndex][1];
@@ -1750,13 +1763,14 @@ buttonNext.addEventListener('click', function(){
     deleteWord ()
   }
   
-  if (input.value === '' || input.value === 'to ' && comment.textContent === 'Wrong :(') {
+  if (comment.textContent === 'Wrong :(') {
     wrongCount.textContent = Number(wrongCount.textContent) - 1;
   }
 
   if (input.value === '' || input.value === 'to ') {
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
+  console.log(input.value)
   engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
