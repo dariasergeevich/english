@@ -1,5 +1,6 @@
 import {words1} from './words1.js';
 import {words2} from './words2.js';
+import {words3} from './words3.js';
 
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
@@ -13,6 +14,7 @@ import {words2} from './words2.js';
 
   let buttonArr1 = document.querySelector('.btn1');
   let buttonArr2 = document.querySelector('.btn2');
+  let buttonArr3 = document.querySelector('.btn3');
 
   let menu = document.querySelector('.menu');
 
@@ -27,6 +29,13 @@ import {words2} from './words2.js';
     menu.classList.add('hidden')
     buttonArr2.classList.add('click');
     getRandomWord(words2);
+    to();
+  })
+
+  buttonArr3.addEventListener('click', function() {
+    menu.classList.add('hidden')
+    buttonArr3.classList.add('click');
+    getRandomWord(words3);
     to();
   })
 
@@ -60,7 +69,8 @@ function checkAnswer() { //провеяет соотвествие англий�
 function deleteWord (words) {
   if (buttonArr1.classList.contains('click')) {
     words = words1
-  }else{words = words2}
+  }else if (buttonArr2.classList.contains('click')) {words = words2}
+  else{words = words3}
   const index = word.getAttribute('index');
 words.splice(index, 1);
 }
@@ -75,7 +85,8 @@ if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
 buttonNext.addEventListener('click', function(words){
   if (buttonArr1.classList.contains('click')) {
     words = words1
-  }else {words = words2}
+  }else if (buttonArr2.classList.contains('click')) {words = words2}
+  else{words = words3}
 
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
@@ -105,7 +116,8 @@ function pressEnter (evt, words) {
 
   if (buttonArr1.classList.contains('click')) {
     words = words1
-  }else{words = words2}
+  }else if (buttonArr2.classList.contains('click')) {words = words2}
+  else{words = words3}
 
 if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   checkAnswer()
