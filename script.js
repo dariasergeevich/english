@@ -1711,8 +1711,19 @@ const words2 = [
 
   let menu = document.querySelector('.menu');
 
-  let words = words2;
+  let words = words0;
 
+  buttonArr1.addEventListener('click', function() {
+    menu.classList.add('hidden')
+    buttonArr1.classList.add('click');
+    getRandomWord(words1);
+  })
+
+  buttonArr2.addEventListener('click', function() {
+    menu.classList.add('hidden')
+    buttonArr1.classList.add('click');
+    getRandomWord(words2);
+  })
 
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
   let randIndex = Math.floor(Math.random() * words.length);
@@ -1722,7 +1733,6 @@ function getRandomWord(words) { //выбирает рандомное слово
   return words[randIndex][0];
 }
 
-getRandomWord(words);
 to();
 
 function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
@@ -1744,7 +1754,10 @@ function checkAnswer() { //провеяет соотвествие англий�
   }
 }
 
-function deleteWord () {
+function deleteWord (words) {
+  if (buttonArr1.classList.contains('click')) {
+    words = words1
+  }else{words = words2}
   const index = word.getAttribute('index');
 words.splice(index, 1);
 }
@@ -1757,6 +1770,10 @@ if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
 }
 
 buttonNext.addEventListener('click', function(){
+  if (buttonArr1.classList.contains('click')) {
+    words = words1
+  }else{words = words2}
+
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
   if (comment.textContent === 'Success!') {
@@ -1770,7 +1787,6 @@ buttonNext.addEventListener('click', function(){
   if (input.value === '' || input.value === 'to ') {
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
-  console.log(input.value)
   engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
@@ -1784,7 +1800,12 @@ buttonCheck.addEventListener('click', function(){
   checkAnswer();
 })
 
-function pressEnter (evt) {
+function pressEnter (evt, words) {
+
+  if (buttonArr1.classList.contains('click')) {
+    words = words1
+  }else{words = words2}
+
 if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   checkAnswer()
 } else if(evt.key === 'Enter' && buttonCheck.classList.contains('disabled')) {
