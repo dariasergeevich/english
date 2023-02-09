@@ -135,6 +135,11 @@ line-height: 1.2;
     line-height: 20px;
     font-weight: 400;
     cursor: pointer;
+    color: black;
+}
+
+.menu_btn:hover {
+  opacity: 0.6;
 }
 
 .menu_row {

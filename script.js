@@ -87,13 +87,11 @@ buttonNext.addEventListener('click', function(){
     deleteWord ()
   }
   
-  if (comment.textContent === 'Wrong :(') {
-    wrongCount.textContent = Number(wrongCount.textContent) - 1;
-  }
-
-  if (input.value === '' || input.value === 'to ') {
+  if (comment.textContent === 'Wrong :(' || comment.textContent === '' ) {
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
+
+
   engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
@@ -122,13 +120,10 @@ if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
     deleteWord ()
   }
   
-  if (input.value === '' || input.value === 'to ' && comment.textContent === 'Wrong :(') {
-    wrongCount.textContent = Number(wrongCount.textContent) - 1;
-  }
-
-  if (input.value === '' || input.value === 'to ') {
+  if (comment.textContent === 'Wrong :(' || comment.textContent === '' ) {
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
+  
   engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
