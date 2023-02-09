@@ -1,9 +1,6 @@
 import {words1} from './words1.js';
 import {words2} from './words2.js';
 
-let words0 = ['', '']
-let words = words0;
-
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
   let buttonNext = document.querySelector('.next-btn');
@@ -28,7 +25,7 @@ let words = words0;
 
   buttonArr2.addEventListener('click', function() {
     menu.classList.add('hidden')
-    buttonArr1.classList.add('click');
+    buttonArr2.classList.add('click');
     getRandomWord(words2);
   })
 
@@ -76,10 +73,10 @@ if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
 }
 }
 
-buttonNext.addEventListener('click', function(){
+buttonNext.addEventListener('click', function(words){
   if (buttonArr1.classList.contains('click')) {
     words = words1
-  }else{words = words2}
+  }else {words = words2}
 
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
