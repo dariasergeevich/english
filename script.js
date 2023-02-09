@@ -83,7 +83,7 @@ buttonNext.addEventListener('click', function(words){
     deleteWord ()
   }
   
-  if (comment.textContent === 'Wrong :(' || comment.textContent === '' ) {
+  if (comment.textContent === '' ) {
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
 
