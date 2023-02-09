@@ -16,17 +16,18 @@ import {words2} from './words2.js';
 
   let menu = document.querySelector('.menu');
 
-
   buttonArr1.addEventListener('click', function() {
     menu.classList.add('hidden')
     buttonArr1.classList.add('click');
     getRandomWord(words1);
+    to();
   })
 
   buttonArr2.addEventListener('click', function() {
     menu.classList.add('hidden')
     buttonArr2.classList.add('click');
     getRandomWord(words2);
+    to();
   })
 
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
@@ -36,8 +37,6 @@ function getRandomWord(words) { //выбирает рандомное слово
   word.setAttribute('index', randIndex)
   return words[randIndex][0];
 }
-
-to();
 
 function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
   engWord.classList.remove('hidden')
