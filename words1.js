@@ -570,7 +570,7 @@ export const words1 = [
   ['connotation', 'значение'],
   ['term', 'термин'],
   ['beside', 'рядом, на "b"'],
-  ['to treat', 'лечить'],
+  ['to treat', 'лечить, относиться'],
   ['sparks', 'искры'],
   ['versus', 'против, на "v"'],
   ['to percolate', 'просачиваться, проникать, на "perc"'],
