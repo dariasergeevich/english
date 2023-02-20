@@ -2,6 +2,7 @@ import {words1} from './words1.js';
 import {words2} from './words2.js';
 import {words3} from './words3.js';
 import {words4} from './words4.js';
+import {words5} from './words5.js';
 
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
@@ -17,6 +18,7 @@ import {words4} from './words4.js';
   let buttonArr2 = document.querySelector('.btn2');
   let buttonArr3 = document.querySelector('.btn3');
   let buttonArr4 = document.querySelector('.btn4');
+  let buttonArr5 = document.querySelector('.btn5');
 
   let menu = document.querySelector('.menu');
 
@@ -45,6 +47,13 @@ import {words4} from './words4.js';
     menu.classList.add('hidden')
     buttonArr4.classList.add('click');
     getRandomWord(words4);
+    to();
+  })
+
+  buttonArr5.addEventListener('click', function() {
+    menu.classList.add('hidden')
+    buttonArr5.classList.add('click');
+    getRandomWord(words5);
     to();
   })
 
@@ -82,8 +91,10 @@ function deleteWord (words) {
   {words = words2}
   else if (buttonArr3.classList.contains('click'))
   {words = words3}
-  else
+  else if (buttonArr4.classList.contains('click'))
   {words = words4}
+  else
+  {words = words5}
 
   const index = word.getAttribute('index');
 words.splice(index, 1);
@@ -103,8 +114,10 @@ buttonNext.addEventListener('click', function(words){
   {words = words2}
   else if (buttonArr3.classList.contains('click'))
   {words = words3}
-  else
+  else if (buttonArr4.classList.contains('click'))
   {words = words4}
+  else
+  {words = words5}
 
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
@@ -137,8 +150,10 @@ function pressEnter (evt, words) {
   {words = words2}
   else if (buttonArr3.classList.contains('click'))
   {words = words3}
-  else
+  else if (buttonArr4.classList.contains('click'))
   {words = words4}
+  else
+  {words = words5}
 
 if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   checkAnswer()
