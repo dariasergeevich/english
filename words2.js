@@ -434,7 +434,7 @@ export const words2 = [
     ['disgruntle', 'недовольство'],
     ['carriage', 'вагон'],
     ['compartment', 'отсек, камера, купе'],
-    ['to shove', 'совать'],
+    ['to shove', 'совать, толкать, пихать'],
     ['to chorus', 'говорить хором'],
     ['badge', 'значок'],
     ['prefect', 'староста'],
