@@ -241,7 +241,7 @@ export const words3 = [
   ['capable', 'способный (сделать что-то)'],
   ['to provoke', 'провоцировать'],
   ['rascal', 'негодяй'],
-  ['appointment', 'назначение, на "ap"'],
+  ['appointment', 'назначение, прием, на "ap"'],
   ['allied', 'союзный'],
   ['to mature', 'зреть, созревать'],
   ['obesity', 'ожирение'],
