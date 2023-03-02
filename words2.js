@@ -484,7 +484,7 @@ export const words2 = [
     ['to infiltrate', 'просачиваться, проникать, на "i"'],
     ['henhouse', 'курятник, на "h"'],
     ['lass', 'девушка'],
-    ['decisiveness', 'решительность'],
+    ['decisiveness', 'решительность, на "dec"'],
     ['to hesitate', 'колебаться, медлить'],
     ['addict', 'пристрастие'],
     ['to interact', 'взаимодействовать'],
