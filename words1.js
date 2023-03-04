@@ -357,7 +357,7 @@ export const words1 = [
   ['boa', 'удав (на "b")'],
   ['constrictor', 'удав (на "c")'],
   ['crutches', 'костыли'],
-  ['to wander', 'бродить'],
+  ['to wander', 'бродить, на "w"'],
   ['ray', 'луч'],
   ['comprehensive', 'всесторонний'],
   ['to stuff', 'засовывать, на "stu"'],
