@@ -151,7 +151,7 @@ export const words1 = [
     ['to flinch', 'вздрагивать, на "f"'],
     ['exasperate', 'раздраженный'],
     ['to admire', 'восхищаться, на "a"'],
-    ['to flatter', 'льстить'],
+    ['to flatter', 'льстить, быть польщенным'],
     ['noble', 'благородный'],
     ['to blush', 'краснеть'],
     ['earmuffs', 'наушники'],
