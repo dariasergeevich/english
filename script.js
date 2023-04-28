@@ -3,6 +3,7 @@ import {words2} from './words2.js';
 import {words3} from './words3.js';
 import {words4} from './words4.js';
 import {words5} from './words5.js';
+import { deleteWords } from './deleteWords.js';
 
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
@@ -21,6 +22,7 @@ import {words5} from './words5.js';
   let buttonArr5 = document.querySelector('.btn5');
 
   let menu = document.querySelector('.menu');
+  let buttonMenu = document.querySelector('.menu-btn');
 
   buttonArr1.addEventListener('click', function() {
     menu.classList.add('hidden')
@@ -57,6 +59,19 @@ import {words5} from './words5.js';
     to();
   })
 
+  function chooseArr() { //функция выбора массива, с которым работает программа
+    if (buttonArr1.classList.contains('click')) 
+    {return words1}
+    else if (buttonArr2.classList.contains('click')) 
+    {return words2}
+    else if (buttonArr3.classList.contains('click'))
+    {return words3}
+    else if (buttonArr4.classList.contains('click'))
+    {return words4}
+    else
+    {return words5}
+  }
+
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
   let randIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randIndex][1];
@@ -84,23 +99,17 @@ function checkAnswer() { //провеяет соотвествие англий�
   }
 }
 
+
 function deleteWord (words) {
-  if (buttonArr1.classList.contains('click')) 
-  {words = words1}
-  else if (buttonArr2.classList.contains('click')) 
-  {words = words2}
-  else if (buttonArr3.classList.contains('click'))
-  {words = words3}
-  else if (buttonArr4.classList.contains('click'))
-  {words = words4}
-  else
-  {words = words5}
+  words = chooseArr()
 
   const index = word.getAttribute('index');
+  deleteWords.push(words[index])
 words.splice(index, 1);
 }
 
 function to () {
+  input.value = ''
   const word = engWord.textContent; 
 if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
   input.value = 'to '
@@ -108,16 +117,7 @@ if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
 }
 
 buttonNext.addEventListener('click', function(words){
-  if (buttonArr1.classList.contains('click')) 
-  {words = words1}
-  else if (buttonArr2.classList.contains('click')) 
-  {words = words2}
-  else if (buttonArr3.classList.contains('click'))
-  {words = words3}
-  else if (buttonArr4.classList.contains('click'))
-  {words = words4}
-  else
-  {words = words5}
+  words = chooseArr()
 
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
@@ -144,16 +144,7 @@ buttonCheck.addEventListener('click', function(){
 })
 
 function pressEnter (evt, words) {
-  if (buttonArr1.classList.contains('click')) 
-  {words = words1}
-  else if (buttonArr2.classList.contains('click')) 
-  {words = words2}
-  else if (buttonArr3.classList.contains('click'))
-  {words = words3}
-  else if (buttonArr4.classList.contains('click'))
-  {words = words4}
-  else
-  {words = words5}
+  words = chooseArr()
 
 if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   checkAnswer()
@@ -179,3 +170,29 @@ if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
 }}
 
 document.addEventListener('keydown', pressEnter)
+
+function returnToMenu (words) {
+  words = chooseArr()
+  menu.classList.remove('hidden')
+deleteWords.forEach(function(item) {
+words.push(item)
+})
+deleteWords.length = 0;
+correctCount.textContent = '0';
+wrongCount.textContent = '0';
+comment.textContent = '';
+engWord.classList.add('hidden');
+buttonCheck.classList.remove('disabled')
+getRandomWord(words);
+to()
+
+buttonArr1.classList.remove('click');
+buttonArr2.classList.remove('click');
+buttonArr3.classList.remove('click');
+buttonArr4.classList.remove('click');
+buttonArr5.classList.remove('click');
+}
+
+buttonMenu.addEventListener('click', returnToMenu)
+
+
