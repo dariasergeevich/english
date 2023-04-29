@@ -190,7 +190,8 @@ correctCount.textContent = '0';
 wrongCount.textContent = '0';
 comment.textContent = '';
 engWord.classList.add('hidden');
-buttonCheck.classList.remove('disabled')
+buttonCheck.classList.remove('disabled');
+buttonCheck.removeAttribute('disabled');
 getRandomWord(words);
 to()
 
