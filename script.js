@@ -24,10 +24,13 @@ import { deleteWords } from './deleteWords.js';
   let menu = document.querySelector('.menu');
   let buttonMenu = document.querySelector('.menu-btn');
 
+  let arrNumber = document.querySelector('.arr_name');
+
   buttonArr1.addEventListener('click', function() {
     menu.classList.add('hidden')
     buttonArr1.classList.add('click');
     getRandomWord(words1);
+    arrNumber.textContent = 'ARR1'
     to();
   })
 
@@ -35,6 +38,7 @@ import { deleteWords } from './deleteWords.js';
     menu.classList.add('hidden')
     buttonArr2.classList.add('click');
     getRandomWord(words2);
+    arrNumber.textContent = 'ARR2'
     to();
   })
 
@@ -42,6 +46,7 @@ import { deleteWords } from './deleteWords.js';
     menu.classList.add('hidden')
     buttonArr3.classList.add('click');
     getRandomWord(words3);
+    arrNumber.textContent = 'ARR3'
     to();
   })
 
@@ -49,6 +54,7 @@ import { deleteWords } from './deleteWords.js';
     menu.classList.add('hidden')
     buttonArr4.classList.add('click');
     getRandomWord(words4);
+    arrNumber.textContent = 'ARR4'
     to();
   })
 
@@ -56,6 +62,7 @@ import { deleteWords } from './deleteWords.js';
     menu.classList.add('hidden')
     buttonArr5.classList.add('click');
     getRandomWord(words5);
+    arrNumber.textContent = 'ARR5'
     to();
   })
 
@@ -121,19 +128,20 @@ buttonNext.addEventListener('click', function(words){
 
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
-  if (comment.textContent === 'Success!') {
+
+  if ((input.value.toLowerCase() === engWord.textContent)) {
     deleteWord ()
-  }
-  
-  if (comment.textContent === '' ) {
+  }else{
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
 
+  console.log(words.length)
 
   engWord.classList.add('hidden');
   comment.textContent = '';
   input.value = '';
   engWord.textContent = '';
+
 
   getRandomWord(words);
   to()
