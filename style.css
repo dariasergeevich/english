@@ -1,9 +1,21 @@
+
+@font-face {
+  font-family: "AristotelicaPro";
+  src: url("Aristotelica.ttf") format("truetype");
+  font-weight: 1000;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat.ttf") format("truetype");
+  
+    }
+
 body {
   margin: 0
 }
 .page {
     margin: 0 auto;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: rgb(245, 245, 220);
   }
 
@@ -27,6 +39,7 @@ body {
     line-height: 20px;
     font-weight: 400;
     cursor: pointer;
+    font-family: AristotelicaPro;
 }
 
 .btn:hover {
@@ -42,21 +55,29 @@ body {
     height: 50px;
     font-size: 16px;
     line-height: 20px;
+    font-family: "Montserrat";
 }
 
 .rus_word {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
     font-weight: 400;
     text-align: center;
+    font-family: "Montserrat";
 }
 
 .green {
     color: green;
+    font-family: AristotelicaPro;
 }
 
 .red {
-    color: red
+    color: red;
+    font-family: AristotelicaPro;
+}
+
+.eng_word {
+  font-family: "Montserrat";
 }
 
 .hidden {
@@ -87,6 +108,7 @@ body {
 margin-top: 17px;
 font-size: 24px;
 line-height: 1.2;
+font-family: AristotelicaPro;
 }
 
 .disabled {
@@ -99,7 +121,7 @@ line-height: 1.2;
 }
 
 .menu {
-  background-color: rgb(245, 245, 220);
+  background-color: rgb(230, 207, 173);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -109,7 +131,7 @@ line-height: 1.2;
   right: 0;
   left: 0;
   top: 0;
- 
+  font-family: AristotelicaPro;
 }
 
 .menu_container {
@@ -118,24 +140,31 @@ line-height: 1.2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 30px;
+ 
 }
 
 .menu_header {
+ 
   text-align: center;
+  font-size: 50px;
 }
 
 .menu_btn {
+
   width: 150px;
-  height: 70px;
+  height: 60px;
   border-radius: 6px;
     border: none;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    font-size: 16px;
+    font-size: 24px;
     line-height: 20px;
     font-weight: 400;
     cursor: pointer;
     color: black;
+    font-family: AristotelicaPro;
+    background-color: #6E0058;
+    color: white;
 }
 
 .menu_btn:hover {
@@ -148,28 +177,21 @@ flex-direction: row;
 align-items: center;
 }
 
-.btn1 {
-  background-color: #C3FBD8;
-}
-
 .btn2 {
-  background-color: #E7ECFF;
   margin-left: 15px;
 }
 
 .btn3 {
-  background-color: #FDEED9;
   margin-left: 15px;
 }
 
 .btn4 {
-  background-color: #B5F2EA;
   margin-left: 15px;
 }
 
 .btn5 {
-  background-color: #FFD1DC;
   margin-left: 15px;
+  background-color: #A1DFB8;
 }
 
 @media (max-width: 425px) {
@@ -193,6 +215,26 @@ align-items: center;
     margin-top: 15px;
   }
   .menu_container {
-    margin-top: 20vh;
+    margin-top: 30px;
   }
+}
+
+.menu_circle {
+  background-color: rgba(251, 236, 229, .6);;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.menu_circle_dark {
+  background-color: rgba(225, 142, 148, .8);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -150px;
 }
