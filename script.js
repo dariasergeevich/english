@@ -27,7 +27,7 @@ import { deleteWords } from './deleteWords.js';
   let arrNumber = document.querySelector('.arr_name');
 
   buttonArr1.addEventListener('click', function() {
-    menu.classList.add('hidden')
+    menu.classList.remove('flex')
     buttonArr1.classList.add('click');
     getRandomWord(words1);
     arrNumber.textContent = 'ARR1'
@@ -35,7 +35,7 @@ import { deleteWords } from './deleteWords.js';
   })
 
   buttonArr2.addEventListener('click', function() {
-    menu.classList.add('hidden')
+    menu.classList.remove('flex')
     buttonArr2.classList.add('click');
     getRandomWord(words2);
     arrNumber.textContent = 'ARR2'
@@ -43,7 +43,7 @@ import { deleteWords } from './deleteWords.js';
   })
 
   buttonArr3.addEventListener('click', function() {
-    menu.classList.add('hidden')
+    menu.classList.remove('flex')
     buttonArr3.classList.add('click');
     getRandomWord(words3);
     arrNumber.textContent = 'ARR3'
@@ -51,7 +51,7 @@ import { deleteWords } from './deleteWords.js';
   })
 
   buttonArr4.addEventListener('click', function() {
-    menu.classList.add('hidden')
+    menu.classList.remove('flex')
     buttonArr4.classList.add('click');
     getRandomWord(words4);
     arrNumber.textContent = 'ARR4'
@@ -59,7 +59,7 @@ import { deleteWords } from './deleteWords.js';
   })
 
   buttonArr5.addEventListener('click', function() {
-    menu.classList.add('hidden')
+    menu.classList.remove('flex')
     buttonArr5.classList.add('click');
     getRandomWord(words5);
     arrNumber.textContent = 'ARR5'
@@ -184,7 +184,7 @@ document.addEventListener('keydown', pressEnter)
 
 function returnToMenu (words) {
   words = chooseArr()
-  menu.classList.remove('hidden')
+  menu.classList.add('flex')
 deleteWords.forEach(function(item) {
 words.push(item)
 })

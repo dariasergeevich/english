@@ -22,27 +22,29 @@ body {
     height: 100vh
   
   }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
+}
   .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   margin-top: 10px;
 
   }
 
   .btn {
      background-color: #6E0058;
-    margin-bottom: 250px;
+   
     width: 192px;
     height: 50px;
     border-radius: 6px;
     border: none;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
     cursor: pointer;
     font-family: AristotelicaPro;
     color: white;
@@ -146,6 +148,10 @@ font-family: AristotelicaPro;
   left: 0;
   top: 0;
   font-family: AristotelicaPro;
+   display: none;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center
 
 }
 
@@ -155,11 +161,15 @@ font-family: AristotelicaPro;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
+   bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 
 .menu_header {
- 
+ margin: 0;
+ margin-bottom: 30px;
   text-align: center;
   font-size: 50px;
   width: calc(100% - 60px);
@@ -229,9 +239,7 @@ align-items: center;
     margin-left: 0;
     margin-top: 15px;
   }
-  .menu_container {
-    margin-top: 30px;
-  }
+ 
 }
 
 .menu_circle {
@@ -240,8 +248,8 @@ align-items: center;
   width: 200px;
   height: 200px;
   position: absolute;
-  margin-left: -50px;
-  margin-top: -50px;
+  margin-left: -240px;
+  margin-top: -480px;
 }
 
 .menu_circle_dark {
@@ -250,8 +258,8 @@ align-items: center;
   width: 300px;
   height: 300px;
   position: absolute;
-  margin-left: calc(100vw - 240px);
-  margin-top: -100px;
+  margin-left: calc(100vw - 100px);
+  margin-top: 400px;
 }
 
 
@@ -285,12 +293,13 @@ align-items: center;
   border-radius: 50%;
   width: 70px;
   height: 70px;
-margin-left: 20px;
-margin-top: 20px;
+top: 2%;
+left: 3%;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .popup {
