@@ -96,6 +96,8 @@ function checkAnswer() { //провеяет соотвествие англий�
     correctCount.textContent = Number(correctCount.textContent) + 1;
     buttonCheck.setAttribute('disabled', '');
     buttonCheck.classList.add('disabled');
+    deleteWord ()
+    
   }else{
     comment.textContent = 'Wrong :(';
     comment.classList.add('red');
@@ -128,14 +130,15 @@ buttonNext.addEventListener('click', function(words){
 
   buttonCheck.removeAttribute('disabled');
   buttonCheck.classList.remove('disabled')
-
-  if ((input.value.toLowerCase() === engWord.textContent)) {
-    deleteWord ()
-  }else{
+  
+  if (input.value.toLowerCase() != engWord.textContent && comment.textContent === ''){
     wrongCount.textContent = Number(wrongCount.textContent) + 1;
   }
-
-  console.log(words.length)
+  
+  if (input.value.toLowerCase() === engWord.textContent && comment.textContent === ''){
+    correctCount.textContent = Number(correctCount.textContent) + 1;
+    deleteWord()
+  }
 
   engWord.classList.add('hidden');
   comment.textContent = '';
@@ -192,6 +195,7 @@ comment.textContent = '';
 engWord.classList.add('hidden');
 buttonCheck.classList.remove('disabled');
 buttonCheck.removeAttribute('disabled');
+popup.classList.remove('flex')
 getRandomWord(words);
 to()
 
@@ -202,6 +206,17 @@ buttonArr4.classList.remove('click');
 buttonArr5.classList.remove('click');
 }
 
-buttonMenu.addEventListener('click', returnToMenu)
+let buttonYes = document.querySelector('.yes')
+let buttonNo = document.querySelector('.no')
+let popup = document.querySelector('.popup')
+
+buttonMenu.addEventListener('click', function() {
+  popup.classList.add('flex')
+})
+
+buttonYes.addEventListener('click', returnToMenu)
+buttonNo.addEventListener('click', function() {
+popup.classList.remove('flex')
+})
 
 
