@@ -229,9 +229,13 @@ let inputEng = document.querySelector('.input_eng');
 let inputRus = document.querySelector('.input_rus');
 let buttonAdd = document.querySelector('.add-btn');
 let buttonMenu1 = document.querySelector('.menu-btn-1');
+let buttonAdmin = document.querySelector('.btn_admin');
 
 let newWords = [];
 let wordsCount = document.querySelector('.words_count');
+let menu1 =  document.querySelector('.menu1');
+let popup1 =  document.querySelector('.popup1');
+let buttonOk = document.querySelector('.btn_ok');
 
 buttonAdd.addEventListener('click', function() {
   let eng = inputEng.value;
@@ -246,10 +250,10 @@ let rus = inputRus.value;
 wordsCount.textContent = newWords.length;
 
 
-async function copyPageUrl(newstr) {
+async function copyArr(newstr) {
   try {
     await navigator.clipboard.writeText(newstr);
-    console.log('URL страницы скопирован в буфер обмена');
+    console.log('Массив скопирован в буфер обмена');
   } catch (err) {
     console.error('Не удалось скопировать: ', err);
   }
@@ -260,8 +264,20 @@ buttonMenu1.addEventListener('click', function() {
   let str = (JSON.stringify(newWords));
   let re = /],/gi;
   let newstr = str.replace(re, '],\n');
-  console.log(newstr);
-  copyPageUrl(newstr)
+  copyArr(newstr);
+  popup1.classList.add('flex')
+
 })
 
+buttonAdmin.addEventListener('click', function() {
+menu.classList.remove('flex');
+menu1.classList.add('flex');
+})
 
+buttonOk.addEventListener('click', function() {
+popup1.classList.remove('flex');
+menu.classList.add('flex');
+menu1.classList.remove('flex');
+newWords.length = 0;
+wordsCount.textContent = newWords.length;
+})
