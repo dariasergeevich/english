@@ -1,9 +1,9 @@
-import {words1} from './words1.js';
-import {words2} from './words2.js';
-import {words3} from './words3.js';
-import {words4} from './words4.js';
-import {words5} from './words5.js';
-import { deleteWords } from './deleteWords.js';
+import {words1} from '././arrays/words1.js';
+import {words2} from '././arrays/words2.js';
+import {words3} from '././arrays/words3.js';
+import {words4} from '././arrays/words4.js';
+import {words5} from '././arrays/words5.js';
+import { deleteWords } from '././arrays/deleteWords.js';
 
   let buttonCheck = document.querySelector('.check-btn');
   let word = document.querySelector('.rus_word');
@@ -106,6 +106,8 @@ function checkAnswer() { //провеяет соотвествие англий�
     buttonCheck.setAttribute('disabled', '');
     buttonCheck.classList.add('disabled');
   }
+  buttonCheck.classList.add('hidden');
+  buttonNext.classList.remove('hidden');
 }
 
 
@@ -145,7 +147,8 @@ buttonNext.addEventListener('click', function(words){
   input.value = '';
   engWord.textContent = '';
 
-
+  buttonCheck.classList.remove('hidden');
+  buttonNext.classList.add('hidden');
   getRandomWord(words);
   to()
 })
@@ -265,7 +268,7 @@ buttonMenu1.addEventListener('click', function() {
   let re = /],/gi;
   let newstr = str.replace(re, '],\n');
   copyArr(newstr);
-  popup1.classList.add('flex')
+  popup1.classList.add('flex');
 
 })
 

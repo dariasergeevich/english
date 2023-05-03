@@ -1,13 +1,13 @@
 
 @font-face {
   font-family: "AristotelicaPro";
-  src: url("Aristotelica.ttf") format("truetype");
+  src: url("./fonts/Aristotelica.ttf") format("truetype");
   font-weight: 1000;
   }
 
   @font-face {
     font-family: "Montserrat";
-    src: url("Montserrat.ttf") format("truetype");
+    src: url("./fonts/Montserrat.ttf") format("truetype");
   
     }
 
@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
   }
 
@@ -59,9 +60,12 @@ body {
 
 .check-btn {
     margin-bottom: 20px;
+    background-color: rgba(225, 142, 148);
+
 }
 
 .next-btn {
+    background-color: #6E0058;
     margin-bottom: 20px;
 
 }
@@ -152,7 +156,8 @@ font-family: AristotelicaPro;
    display: none;
  flex-direction: column;
  align-items: center;
- justify-content: center
+ justify-content: center;
+
 
 }
 
@@ -331,11 +336,14 @@ left: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .popup_title {
   width: calc(100% - 40px);
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .yes {
