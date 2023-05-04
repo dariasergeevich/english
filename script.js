@@ -198,7 +198,13 @@ comment.textContent = '';
 engWord.classList.add('hidden');
 buttonCheck.classList.remove('disabled');
 buttonCheck.removeAttribute('disabled');
-popup.classList.remove('flex')
+popup.classList.remove('flex');
+
+if (!buttonNext.classList.contains('hidden')) {
+  buttonNext.classList.add('hidden');
+  buttonCheck.classList.remove('hidden');
+}
+
 getRandomWord(words);
 to()
 
@@ -241,9 +247,9 @@ let popup1 =  document.querySelector('.popup1');
 let buttonOk = document.querySelector('.btn_ok');
 
 buttonAdd.addEventListener('click', function() {
-  let eng = inputEng.value;
-let rus = inputRus.value;
-  let newWord = `${eng}, ${rus}`.split(', ')
+  let eng = inputEng.value.toLowerCase();
+let rus = inputRus.value.toLowerCase();
+  let newWord = `${eng},  ${rus}`.split(',  ')
   newWords.push(newWord);
   wordsCount.textContent = newWords.length;
   inputEng.value = '';
@@ -284,3 +290,5 @@ menu1.classList.remove('flex');
 newWords.length = 0;
 wordsCount.textContent = newWords.length;
 })
+
+console.log(words1.length,words2.length,words3.length, words4.length, words5.length )
