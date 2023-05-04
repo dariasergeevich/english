@@ -1,6 +1,5 @@
 export const words4 = [
    //hp chapter 12
-   ['fir', 'ель'],
    ['to smirk', 'ухмыляться'],
    ['spectacular', 'впечатляюще'],
    ['festoon', 'гирлянда'],

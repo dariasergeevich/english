@@ -1,4 +1,11 @@
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "AristotelicaPro";
   src: url("./fonts/Aristotelica.ttf") format("truetype");
@@ -23,17 +30,32 @@ body {
   
   }
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 
 }
   .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 
   }
@@ -45,7 +67,8 @@ body {
     height: 50px;
     border-radius: 6px;
     border: none;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     font-family: AristotelicaPro;
     color: white;
@@ -106,10 +129,17 @@ body {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 140px;
-  justify-content:space-between
+  -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between
 }
 
 .correct {
@@ -154,9 +184,16 @@ font-family: AristotelicaPro;
   top: 0;
   font-family: AristotelicaPro;
    display: none;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
 
 
 }
@@ -164,9 +201,16 @@ font-family: AristotelicaPro;
 .menu_container {
   z-index: 2;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
    bottom: 0;
   right: 0;
   left: 0;
@@ -187,7 +231,8 @@ text-align: center;
   height: 60px;
   border-radius: 6px;
     border: none;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-size: 24px;
     line-height: 20px;
     font-weight: 400;
@@ -203,9 +248,16 @@ text-align: center;
 }
 
 .menu_row {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: row;
-align-items: center;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 .btn2 {
@@ -227,7 +279,10 @@ align-items: center;
 
 @media (max-width: 1024px) {
   .menu_row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .btn2 {
     margin-left: 0;
@@ -301,10 +356,16 @@ align-items: center;
   height: 70px;
 top: 2%;
 left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
 }
 
@@ -325,6 +386,8 @@ left: 3%;
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .popup_container {
@@ -333,10 +396,19 @@ left: 3%;
   height: 200px;
   margin: auto;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popup_title {
@@ -369,7 +441,8 @@ left: 3%;
 
 .btn_admin {
   background-color: black;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-bottom: 30px;
   margin-right: 20px;
   border-radius: 50%;
