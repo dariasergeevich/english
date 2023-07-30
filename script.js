@@ -132,20 +132,70 @@ function getRandomWord(words) { //выбирает рандомное слово
 
   let wordArr = engWord.textContent.split('');
 
+ 
+ //работа с DOM: сделать так, чтобы слова переносились на новые строчки
+
+ /*let arrGap = [];
+ let arrInputId = [];
+
+ for (let i = 0; i < inputArr.length; i += 1) {
+   arrInputId.push(inputArr[i].id)
+ }
+ arrGap.push(arrInputId.indexOf(' '))
+
+ console.log(inputArr)
+ console.log(arrInputId)*/
+
+
   wordArr.forEach(element => {
+    
+   
     let wordInput = getTemplate(element);
-    document.querySelector('.input_container').append(wordInput);
+    inputArr.push(wordInput)
+    /*let arrGap = [];
+
+
+ arrGap.push(wordArr.indexOf(' '))
+
     inputArr.push(wordInput);
-  
+    console.log(wordArr.indexOf(element)<arrGap[0])
+
+    let div1 = document.createElement('div');
+    let div2 = document.createElement('div');
+    let div3 = document.createElement('div');
+    let div4 = document.createElement('div');
+    let div5 = document.createElement('div');
+
+    document.querySelector('.input_container').append(div1)
+    document.querySelector('.input_container').append(div2)
+    document.querySelector('.input_container').append(div3)
+    document.querySelector('.input_container').append(div4)
+    document.querySelector('.input_container').append(div5)
+
+
+    console.log(document.querySelector('.input_container'))*/
+
+
+    //document.querySelector('.input_container').append(wordInput)
+//console.log(arrGap[0])
+    /*if(wordArr.indexOf(element) <arrGap[0]) {
+      div1.append(wordInput);
+    }
+    
+    if(wordArr.indexOf(element) > arrGap[0]) {
+      div2.append(wordInput);
+    }
+
+    else{
+    document.querySelector('.input_container').append(wordInput);}*/
+    
+    document.querySelector('.input_container').append(wordInput)
   });
 
 
 
 
 
-
-
-  //to();
  
   inputArr[0].focus();
 
@@ -186,14 +236,47 @@ for (let i = 0; i < inputArr.length; i += 1) {
       inputArr[0].focus();
       
     }
-    /*else if(event.code == 'Backspace' && inputArr[i-1].hasAttribute('disable') == true) {
-      console.log(i)
-      inputArr[i].focus();
-      
-    }*/
+
   })
  }
+    //работа с DOM: сделать так, чтобы слова переносились на новые строчки
 
+    /*let arrGap = [];
+    let arrInputId = [];
+
+    for (let i = 0; i < inputArr.length; i += 1) {
+      arrInputId.push(inputArr[i].id)
+    }
+    arrGap.push(arrInputId.indexOf(' '))
+    console.log(arrGap)
+
+    for (let i = 0; i < arrGap.length; i += 1) {
+if (arrGap[0] === -1) {
+  arrGap.length = 0
+}
+      if(arrGap.length === 1) {
+        inputArr[0].insertAdjacentHTML('beforeBegin','<div class = "word_row">')
+        inputArr[arrGap[i]].insertAdjacentHTML('afterEnd','<div>')
+        console.log(inputArr[0])
+        console.log(inputArr[arrGap[i]])
+        console.log(document.querySelector('.word_row'))
+      }else if(arrGap.length > 1) {
+        inputArr[0].insertAdjacentHTML('beforeBegin','<div class = "word_row">')
+        inputArr[i].insertAdjacentHTML('afterBegin','<div><div class = "word_row">')
+        inputArr[i].insertAdjacentHTML('afterBegin','<div><div class = "word_row">')
+      }
+    }}*/
+//ПРИМЕР
+    /*let tables = document.getElementsByTagName('table'),
+    length = tables.length,
+    i, wrapper;
+
+for (i = 0; i < length; i++) {
+    wrapper = document.createElement('div');
+    wrapper.setAttribute('class', 'classname');
+    tables[i].parentNode.insertBefore(wrapper, tables[i]);
+    wrapper.appendChild(tables[i]);
+} */
 
   return words[randIndex][0];
 }
@@ -213,7 +296,7 @@ for (let i = 0; i < inputArr.length; i += 1) {
 function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
   engWord.classList.remove('hidden')
 
-  //let wordArr = engWord.textContent.split('');
+
 
   
 let inputLetterArr = [];
@@ -287,33 +370,16 @@ inputArr.forEach((item) => {
     item.classList.add('opacity');
     item.value = ' ';
     
-   //console.log(inputArr[inputArr.indexOf(item)+1])
+
   }
   
 }
 
 )
 
-/*function gap () {
-  inputArr.forEach((item) => {
-    if (item.id === ' ') {
-      inputArr[i].classList.add('opacity')
-    }
-  }
-  
-  )
-}*/
 
 
 
-inputArr.forEach ((item) => {
-  
-/*if (item.id === ' ') {
-  console.log(item.id === ' ')
-  item.value = ' ';
-  item.setAttribute('disabled', 'true');
-}*/
-})
 
 
 
@@ -365,7 +431,8 @@ buttonCheck.addEventListener('click', function(){
   checkAnswer();
 })
 
-function pressEnter (evt, words) {
+/*function pressEnter (evt, words) {
+  inputArr.length = 0;
   words = chooseArr()
 
 if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
@@ -387,11 +454,14 @@ if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
   input.value = '';
   engWord.textContent = '';
 
+  for (let i = 0; i < inputArr.length; i += 1) {
+    inputArr[i].removeAttribute('disabled')
+  }
   getRandomWord(words);
   to()
-}}
+}}*/
 
-document.addEventListener('keydown', pressEnter)
+//document.addEventListener('keydown', pressEnter)
 
 function returnToMenu (words) {
 inputArr.length = 0;
@@ -508,3 +578,5 @@ wordsCount.textContent = newWords.length;
 })
 
 console.log(words1.length,words2.length,words3.length, words4.length, words5.length )
+
+

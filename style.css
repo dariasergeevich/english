@@ -464,14 +464,23 @@ left: 3%;
 }
 
 .input_letter {
-  width: 25px;
-    height: 30px;
+  width: 15px;
+    height: 20px;
     font-size: 16px;
     line-height: 20px;
     font-family: "Montserrat";
+    border-radius: 10%;
+    margin-right: 3px;
+    border: 1px solid grey ;
+    box-shadow: 0;
 }
 
 .input_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  min-height: 100px;
+  align-items: center;
+  justify-content: center;
 }
