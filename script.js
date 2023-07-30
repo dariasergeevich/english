@@ -27,6 +27,8 @@ import { deleteWords } from '././arrays/deleteWords.js';
   let arrNumber = document.querySelector('.arr_name');
 
   buttonArr1.addEventListener('click', function() {
+    inputArr.length = 0;
+document.querySelector('.input_container').innerHTML = '';
     menu.classList.remove('flex')
     buttonArr1.classList.add('click');
     getRandomWord(words1);
@@ -35,6 +37,8 @@ import { deleteWords } from '././arrays/deleteWords.js';
   })
 
   buttonArr2.addEventListener('click', function() {
+    inputArr.length = 0;
+document.querySelector('.input_container').innerHTML = '';
     menu.classList.remove('flex')
     buttonArr2.classList.add('click');
     getRandomWord(words2);
@@ -43,6 +47,8 @@ import { deleteWords } from '././arrays/deleteWords.js';
   })
 
   buttonArr3.addEventListener('click', function() {
+    inputArr.length = 0;
+document.querySelector('.input_container').innerHTML = '';
     menu.classList.remove('flex')
     buttonArr3.classList.add('click');
     getRandomWord(words3);
@@ -51,6 +57,8 @@ import { deleteWords } from '././arrays/deleteWords.js';
   })
 
   buttonArr4.addEventListener('click', function() {
+    inputArr.length = 0;
+document.querySelector('.input_container').innerHTML = '';
     menu.classList.remove('flex')
     buttonArr4.classList.add('click');
     getRandomWord(words4);
@@ -59,6 +67,8 @@ import { deleteWords } from '././arrays/deleteWords.js';
   })
 
   buttonArr5.addEventListener('click', function() {
+    inputArr.length = 0;
+document.querySelector('.input_container').innerHTML = '';
     menu.classList.remove('flex')
     buttonArr5.classList.add('click');
     getRandomWord(words5);
@@ -79,17 +89,144 @@ import { deleteWords } from '././arrays/deleteWords.js';
     {return words5}
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function getTemplate(id) { 
+    const newInput = document 
+    .querySelector('.template') 
+    .content 
+    .querySelector('.input_letter') 
+    .cloneNode('true'); 
+  newInput.id = id;
+  
+    return newInput;
+  }
+  let inputArr = [];
+  
+
+
 function getRandomWord(words) { //выбирает рандомное слово на английском и передает его в код
   let randIndex = Math.floor(Math.random() * words.length);
   word.textContent = words[randIndex][1];
   engWord.textContent = words[randIndex][0];
-  word.setAttribute('index', randIndex)
+  word.setAttribute('index', randIndex);
+
+
+  let wordArr = engWord.textContent.split('');
+
+  wordArr.forEach(element => {
+    let wordInput = getTemplate(element);
+    document.querySelector('.input_container').append(wordInput);
+    inputArr.push(wordInput);
+  
+  });
+
+
+
+
+
+
+
+  //to();
+ 
+  inputArr[0].focus();
+
+
+
+
+
+
+
+
+//перенос курсора вперед
+for (let i = 0; i < inputArr.length -1; i += 1) {
+  
+  inputArr[i].oninput = function() {
+    
+    
+  
+    if(inputArr[i+1].classList.contains('opacity')) {
+      inputArr[i+2].focus();
+      console.log(inputArr[i+2]);
+      
+    }else{
+      inputArr[i+1].focus()}
+    
+  }}
+//перенос курсора назад
+
+for (let i = 0; i < inputArr.length; i += 1) {
+  inputArr[i].addEventListener('keyup', function(event) {
+    if (event.code == 'Backspace' && inputArr[0].value != '') {
+      inputArr[i-1].focus();
+      inputArr[i-1].value = '';
+      console.log(inputArr[i-1].hasAttribute('disable') === true)
+      console.log(inputArr[i-1])
+      
+    }else if(event.code == 'Backspace' && inputArr[0].value === '') {
+      
+      inputArr[0].focus();
+      
+    }
+    /*else if(event.code == 'Backspace' && inputArr[i-1].hasAttribute('disable') == true) {
+      console.log(i)
+      inputArr[i].focus();
+      
+    }*/
+  })
+ }
+
+
   return words[randIndex][0];
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
   engWord.classList.remove('hidden')
-  if (input.value.toLowerCase() === engWord.textContent) {
+
+  //let wordArr = engWord.textContent.split('');
+
+  
+let inputLetterArr = [];
+
+for (let i = 0; i < inputArr.length; i += 1) {
+  inputLetterArr.push(inputArr[i].value);
+  inputArr[i].setAttribute('disabled', 'true')
+}
+
+let inputWord = inputLetterArr.join('');
+
+
+if (inputWord.toLowerCase() === engWord.textContent) {
     comment.textContent = 'Success!';
     comment.classList.add('green');
     comment.classList.remove('red');
@@ -106,6 +243,7 @@ function checkAnswer() { //провеяет соотвествие англий�
     buttonCheck.setAttribute('disabled', '');
     buttonCheck.classList.add('disabled');
   }
+
   buttonCheck.classList.add('hidden');
   buttonNext.classList.remove('hidden');
 }
@@ -119,15 +257,81 @@ function deleteWord (words) {
 words.splice(index, 1);
 }
 
+
+
+
+
+
+
+//автоматически вставляет пробелы и to
+
 function to () {
-  input.value = ''
+  //input.value = ''
   const word = engWord.textContent; 
 if (word[0] === 't' && word[1] === 'o' && word[2] === ' ') {
-  input.value = 'to '
-}
+  //input.value = 'to '
+  inputArr[0].value = 't';
+  inputArr[0].setAttribute('disabled', 'true')
+  inputArr[1].value = 'o';
+  inputArr[1].setAttribute('disabled', 'true')
+  inputArr[2].value = ' ';
+  inputArr[2].classList.add('opacity');
+  inputArr[2].setAttribute('disabled', 'true')
+  
+  inputArr[3].focus();
+  
 }
 
+inputArr.forEach((item) => {
+  if (item.id === ' ') {
+    item.classList.add('opacity');
+    item.value = ' ';
+    
+   //console.log(inputArr[inputArr.indexOf(item)+1])
+  }
+  
+}
+
+)
+
+/*function gap () {
+  inputArr.forEach((item) => {
+    if (item.id === ' ') {
+      inputArr[i].classList.add('opacity')
+    }
+  }
+  
+  )
+}*/
+
+
+
+inputArr.forEach ((item) => {
+  
+/*if (item.id === ' ') {
+  console.log(item.id === ' ')
+  item.value = ' ';
+  item.setAttribute('disabled', 'true');
+}*/
+})
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 buttonNext.addEventListener('click', function(words){
+  inputArr.length = 0;
+  document.querySelector('.input_container').innerHTML = '';
   words = chooseArr()
 
   buttonCheck.removeAttribute('disabled');
@@ -149,6 +353,10 @@ buttonNext.addEventListener('click', function(words){
 
   buttonCheck.classList.remove('hidden');
   buttonNext.classList.add('hidden');
+
+  for (let i = 0; i < inputArr.length; i += 1) {
+    inputArr[i].removeAttribute('disabled')
+  }
   getRandomWord(words);
   to()
 })
@@ -186,11 +394,19 @@ if (evt.key === 'Enter' && !buttonCheck.classList.contains('disabled')) {
 document.addEventListener('keydown', pressEnter)
 
 function returnToMenu (words) {
+inputArr.length = 0;
+document.querySelector('.input_container').innerHTML = '';
+console.log(inputArr)
+  
+
   words = chooseArr()
   menu.classList.add('flex')
 deleteWords.forEach(function(item) {
 words.push(item)
 })
+
+
+
 deleteWords.length = 0;
 correctCount.textContent = '0';
 wrongCount.textContent = '0';

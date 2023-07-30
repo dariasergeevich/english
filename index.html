@@ -27,7 +27,8 @@
         </div>
       </div>
     <h3 class="rus_word"></h3>
-    <input class="input">
+    <!--<input class="input">-->
+    <div class="input_container"></div>
    
     <p class="eng_word hidden"></p>
     <p class="comment"></p>
@@ -64,6 +65,7 @@
     <input class="input input_eng">
     <p>ENTER RUSSIAN TRANSLATION</p>
     <input class="input input_rus">
+   
     <button class="btn add-btn">ADD WORD</button>
   </div>
 </div>
@@ -92,7 +94,10 @@
   </div>
   </div>
 
-
+  <template class='template' id="input">
+    <input class="input_letter" maxlength="1" id="" >
+  </template>
+  
 <script src="./script.js" type="module"></script>
 <script src="./words1.js" type="module"></script>
 <script src="./words2.js" type="module"></script>
