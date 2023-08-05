@@ -13,6 +13,7 @@ let buttonArr2 = document.querySelector('.btn2');
 let buttonArr3 = document.querySelector('.btn3');
   let buttonArr4 = document.querySelector('.btn4');
   let buttonArr5 = document.querySelector('.btn5');
+  let buttonSpecial = document.querySelector('.specially_btn')
 
   let menu = document.querySelector('.menu');
   let buttonMenu = document.querySelector('.menu-btn');
@@ -40,5 +41,5 @@ let buttonOk = document.querySelector('.btn_ok');
 export const constants = {
     buttonCheck, word,buttonNext,comment,input,engWord,correctCount,wrongCount, buttonArr1,buttonArr2, buttonArr3,
     buttonArr4, buttonArr5, menu, buttonMenu,arrNumber,inputArr, buttonYes,buttonNo,popup,inputEng,inputRus,buttonAdd,
-    buttonMenu1,buttonAdmin,newWords,wordsCount,menu1,popup1,buttonOk
+    buttonMenu1,buttonAdmin,newWords,wordsCount,menu1,popup1,buttonOk, buttonSpecial
 }
