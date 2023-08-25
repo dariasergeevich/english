@@ -106,6 +106,7 @@ words.splice(index, 1);
   constants.buttonCheck.classList.remove('disabled');
   constants.buttonCheck.removeAttribute('disabled');
   constants.popup.classList.remove('flex');
+  constants.phrase.classList.add('hidden');
   
   if (!constants.buttonNext.classList.contains('hidden')) {
     constants.buttonNext.classList.add('hidden');

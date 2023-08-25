@@ -41,10 +41,11 @@ let buttonOk = document.querySelector('.btn_ok');
 let phrase = document.querySelector('.phrase');
 let inputPhrase = document.querySelector('.input_phrase');
 let inputKeyword = document.querySelector('.input_keyword');
+let wordsRemain = document.querySelector('.words_remain');
 
 
 export const constants = {
     buttonCheck, word,buttonNext,comment,input,engWord,correctCount,wrongCount, buttonArr1,buttonArr2, buttonArr3,
     buttonArr4, buttonArr5, menu, buttonMenu,arrNumber,inputArr, buttonYes,buttonNo,popup,inputEng,inputRus,buttonAdd,
-    buttonMenu1,buttonAdmin,newWords,wordsCount,menu1,popup1,buttonOk, buttonSpecial,phrase,inputPhrase,inputKeyword
+    buttonMenu1,buttonAdmin,newWords,wordsCount,menu1,popup1,buttonOk, buttonSpecial,phrase,inputPhrase,inputKeyword,wordsRemain
 }

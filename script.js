@@ -17,7 +17,7 @@ let handleChooseArr = function(button, arr, num) {
   constants.menu.classList.remove('flex')
   button.classList.add('click');
   getRandomWord(arr);
-  constants.arrNumber.textContent = 'ARR ' + num
+  constants.arrNumber.textContent = 'ARR ' + num;
   to();
 }
 
@@ -66,7 +66,9 @@ constants.phrase.innerHTML = phraseBold
     let wordInput = getTemplate(element);
     constants.inputArr.push(wordInput)
     
-    document.querySelector('.input_container').append(wordInput)
+    document.querySelector('.input_container').append(wordInput);
+    constants.wordsRemain.textContent = `${words.length} words left`
+
   });
 
 
