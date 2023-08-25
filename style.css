@@ -492,3 +492,15 @@ left: 3%;
   align-items: center;
   justify-content: center;
 }
+
+.phrase {
+  font-family: "Montserrat";
+  text-align: center;
+  width: 280px;
+  color: gray
+}
+
+.span {
+  color: black;
+  font-weight: bold;
+}

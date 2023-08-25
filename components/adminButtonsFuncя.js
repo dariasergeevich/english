@@ -4,11 +4,16 @@ import { constants } from "./constants.js";
 export function addNewWord() {
   let eng = constants.inputEng.value.toLowerCase();
   let rus = constants.inputRus.value.toLowerCase();
-    let newWord = `${eng},  ${rus}`.split(',  ')
+  let phr =  constants.inputPhrase.value.toLowerCase();
+  let key =  constants.inputKeyword.value.toLowerCase();
+
+    let newWord = `${eng},  ${rus},  ${phr},  ${key}`.split(',  ')
     constants.newWords.push(newWord);
     constants.wordsCount.textContent = constants.newWords.length;
     constants.inputEng.value = '';
     constants.inputRus.value = '';
+    constants.inputPhrase.value = '';
+    constants.inputKeyword.value = '';
 }
 
 async function copyArr(newstr) {

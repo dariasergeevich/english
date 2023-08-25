@@ -3,6 +3,8 @@ import { constants } from "./constants.js";
 import {chooseArr, getRandomWord} from "../script.js"
 import { deleteWords } from "././deleteWords.js";
 import {to} from './cursorFunc.js'
+
+
 export function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
   constants.engWord.classList.remove('hidden')
  
@@ -36,6 +38,8 @@ if (inputWord.toLowerCase() === constants.engWord.textContent) {
 
   constants.buttonCheck.classList.add('hidden');
   constants.buttonNext.classList.remove('hidden');
+  constants.phrase.classList.remove('hidden');
+  
 }
 
 
@@ -73,6 +77,7 @@ words.splice(index, 1);
   
     constants.buttonCheck.classList.remove('hidden');
     constants.buttonNext.classList.add('hidden');
+    constants.phrase.classList.add('hidden');
   
     for (let i = 0; i < constants.inputArr.length; i += 1) {
       constants.inputArr[i].removeAttribute('disabled')

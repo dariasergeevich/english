@@ -32,6 +32,7 @@
     </div>
    
     <p class="eng_word hidden"></p>
+    <p class="phrase hidden"></p>
     <p class="comment"></p>
   
     <button class="check-btn btn">CHECK</button>
@@ -67,6 +68,10 @@
     <input class="input input_eng">
     <p>ENTER RUSSIAN TRANSLATION</p>
     <input class="input input_rus">
+    <p>ENTER PHRASE WITH WORD</p>
+    <input class="input input_phrase">
+    <p>ENTER KEYWORD FROM PHRASE</p>
+    <input class="input input_keyword">
    
     <button class="btn add-btn">ADD WORD</button>
   </div>
@@ -99,10 +104,11 @@
   <template class='template' id="input">
     <input class="input_letter" maxlength="1" id="" >
   </template>
+
+  <template class='template_word' id="tmp_wrd">
+    <div class="one_word"></div>
+  </template>
   
 <script src="./script.js" type="module"></script>
-<script src="./words1.js" type="module"></script>
-<script src="./words2.js" type="module"></script>
-<script src="./words3.js" type="module"></script>
 </body>
 </html>

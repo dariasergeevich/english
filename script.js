@@ -56,7 +56,9 @@ export function getRandomWord(words) {
   constants.word.textContent = words[randIndex][1];
   constants.engWord.textContent = words[randIndex][0];
   constants.word.setAttribute('index', randIndex);
-
+  constants.phrase.textContent = words[randIndex][2];
+let phraseBold = words[randIndex][2].replace((words[randIndex][3]),`<span class="span">${words[randIndex][3]}</span>`)
+constants.phrase.innerHTML = phraseBold
 
   let wordArr = constants.engWord.textContent.split('');
   wordArr.forEach(element => {
@@ -67,13 +69,33 @@ export function getRandomWord(words) {
     document.querySelector('.input_container').append(wordInput)
   });
 
+
   constants.inputArr[0].focus();
+
+
+
+/*let word_count = 0
+wordArr.forEach((item) => {
+  
+  if(item === ' ') {
+    word_count += 1
+  }
+  
+})
+console.log(word_count)*/
+
+
+
+
 
 cursorForward()
 cursorBack()
 
   return words[randIndex][0];
 }
+
+
+
 
 
 //eventListeners кнопок
