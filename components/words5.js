@@ -314,5 +314,235 @@ export const words5 = [
 
 ["tumbledown","ветхий, полуразрушенный", "They had landed next to a tumbledown garage in a small yard", "tumbledown"],
 
+["exhaust","выхлопная труба, выхлоп", "But the car disappeared from view with one last snort from its exhaust", "exhaust"],
+
+["to flail","молотить руками, рамахивать", "He glanced over his shoulder at the ancient tree, which was still flailing its branches threateningly", "flailing"],
+
+["wearily","устало", "'Come on,' said Harry wearily, 'we’d better get up to the school...'", "wearily"],
+["stiff","окоченевший, жесткий", "Stiff, cold and bruised, they seized the ends of their trunks and began dragging them up the grassy slope", "Stiff"],
+
+["vivid","яркий, колоритный", "Ginny was amongst them, easily visible because of her vivid Weasley hair", "vivid"],
+
+
+
+["bespectacled","в очках, носящая очки", "Meanwhile, Professor McGonagall, a bespectacled witch with her hair in a tight bun, was placing the famous Hogwarts Sorting Hat on a stool before the newcomers", "bespectacled"],
+
+["frayed","изношенный, потасканный", "Every year, this aged old hat, patched, frayed and dirty, sorted new students into the four Hogwarts houses", "frayed"],
+
+["to wallop","бить, колотить", "Harry felt as though he'd just been walloped in the stomach", "walloped"],
+
+
+["to rest with","быть наделенным (властью)", "'Unfortunately, you are not in my house and the decision to expel you does not rest with me'", "rest with"],
+
+["ominously","зловеще, угрожающе", "'Explain' she said, her glasses glinting ominously", "ominously"],
+
+["grave","серьезный, тяжкий, мрачный", "Harry's whole body went numb. Dumble-dore was looking unusually grave", "grave"],
+
+["to flout","пренебрегать", "'Professor Dumbledore, these boys have flouted rules, caused serious damage to an old and valuable tree'", "flouted"],
+
+["custard","заварной крем, крем-брюле", "'There is a delicious-looking custard tart I want to sample'", "custard"],
+
+["venom","яд, отрава", "Snape shot a look of pure venom at Harry and Ron as he allowed himself to be swept out of his office", "venom"],
+
+["wrathful","гневный, сердитый", "He leaving them alone with Professor McGonagall, who was still eyeing them like a wrathful eagle", "wrathful"],
+
+["considerably","значительно, существенно", "Harry's heart lightened considerably", "considerably"],
+
+["sagely","мудро, глубокомысленно", "'She didn't want us showing off', said Ron sagely", "sagely"],
+
+["to show off","выпендриваться, красоваться", "'She didn't want us showing off', said Ron sagely", "showing off"],
+
+["to tread","топтать, идти, шагать", "They rose and left the office, treading the familiar path to Gryffindor Tower", "treading"],
+
+["awestruck","охваченный благоговейным страхом", "'Amazing,' said Neville, awestruck", "awestruck"],
+
+["can not help it","ничего не могу с собой поделать", "Harry couldn't help it. He grinned, too", "couldn't help it"]
+
+["tureen","супница, миска", "Four long house tables were laden with tureens of porridge", "tureens"],
+
+["kipper","копченая рыба", "Tables were laden with tureens of porridge, plates of kippers, mountains of toast", "kippers"],
+
+
+["stiffness","жесткость, чопорность", "There was a slight stiffness in the way she said 'Morning", "stiffness"],
+
+["prone","склонный, подверженный", "Neville was a round-faced and accident-prone boy", "prone"],
+
+["bedraggled","испачканный", "'Errol!' said Ron, pulling the bedraggled owl out by the feet", "bedraggled"],
+
+["unconscious","без сознания", "Errol slumped, unconscious, onto the table", "unconscious"],
+
+ ["to ease it from ","извлечь из", "Ron stretched out a shaking hand, eased the envelope from Errol's beak and slit it open", "eased the envelope from"],
+
+["crimson","малиновый, багровый", "Ron sank so low in his chair that only his crimson forehead could be seen", "crimson"],
+
+["to swivel","повернуться, поворачивать", "People throughout the Hall were swivelling around to see who had received the Howler", "swivelling"],
+
+["inquiry","расследование, допрос", "'ABSOLUTELY DISGUSTED, YOUR FATHER'S FACING AN INQUIRY AT WORK'", "INQUIRY"],
+
+["to dwell","размышлять", "But he had no time to dwell on this", "dwell"],
+
+["sling","ремень, канат, петля (подвязь)", "Harry spotted the Whomping Willow in the distance, several of its branches now in slings", "slings"],
+
+["twinge","приступ боли", "Professor Sprout's arms were full of bandages, and with another twinge of guilt, Harry spotted the Whomping Willow", "twinge"],
+
+["immaculate","безупречный", "Gilderoy Lockhart, however, was immaculate in sweeping robes of turquoise", "immaculate"],
+
+["trimming","отделка (декоративные украшения)", "His golden hair shining under a perfectly positioned turquoise hat with gold trimming", "trimming"],
+
+["chap","парень, малец", "'Greenhouse Three today, chaps!' said Professor Sprout", "chaps"],
+
+["fertiliser","удобрение", "Harry caught a whiff of damp earth and fertiliser", "fertiliser"],
+
+["considerate","внимательный, тактичный", "No matter how considerate he tried to be, it seemed he always managed to hurt Corporal Whitcomb's feelings", "considerate"],
+
+["decline","отказываться, снижаться", "You need to acknowledge that our chance of success has declined in the last 24 hours", "declined"],
+
+["eventually","в итоге, в конечном итоге", "Eventually, we pulled over for a cup of coffee and a bit more arguing about doors", "Eventually"],
+
+["intercourse","связь, взаимоотношения", "The intercourse between the two sisters fainter continually", "intercourse"],
+
+["amount owed","сумма задолженности", "As of late last month, the amount owed totaled more than $587 million", "amount owed"],
+
+["right away","немедленно, сразу же", "'I'll go right away and call her,' said Tamara", "right away"],
+
+["to charge a fee","взимать плату", "Typically credit card companies charge a fee for going over your credit limit", "charge a fee"],
+
+["to wrong","ошибаться, обижать", "Whatever you from, whoever did you wrong, didn't do what they were supposed to do", "wrong"],
+
+["anger","гнев", "Then his look of surprise gave way to anger", "anger"],
+
+["to exclaim","восклицать", "'Impossible!' exclaimed his father vigorously", "exclaimed"],
+
+["chrysanthemum","хризантема", "The ME found dried chrysanthemum and oak leaf in his stomach contents", "chrysanthemum"],
+
+["to outperform","превосходить", "But senior runners often outperform younger runners", "outperform"],
+
+["coincidence","совпадение", "She'd realized earlier that there was another troubling coincidence to this story", "coincidence"],
+
+["to refine","совершенствовать, улучшать", "My father and I wanted time to refine the procedures and make it safe", "refine"],
+
+["upbringing","воспитание", "'Tell me, my dear: you're not taking control of your son's upbringing?'", "upbringing"],
+
+["soft underbelly","слабое место, уязвимое место", "'I saw this soft underbelly, and I lunged'", "soft underbelly"],
+
+["attaboy","молодчина", "'Attaboy, Frost'", "Attaboy"],
+
+["spool","катушка", "To avoid getting lost divers carry with them a spool of string", "spool"],
+
+["supervisor","руководитель, начальник", "'I'm his direct supervisor'", "supervisor"],
+
+["in order","чтобы (добиться чего-то)", "It was crowded and well lighted in order that interrupters could be spotted immediately", "in order"],
+
+["precedence","приоритет, первенство", "'I'd like you to give our office precedence on the more serious charges as a professional courtesy'", "precedence"],
+
+["to bolt out","выскочить, быстро покинуть", "'In the middle of dinner, he’d hear about something, and he’d bolt out to report it' Mr. Bart said", "bolt out"],
+
+["conventional","обычный, общепринятый", "'It's just you're bound by conventional notions of what's right and wrong and I'm free'", "conventional"],
+
+["insensitivity","бесчувственность", "'How could you have learned meditation, holding your breath, insensitivity against hunger and pain?'", "insensitivity"],
+
+["underlings","подчиненные", "'I don't mean to pry, but is that how you treat all your underlings?'", "underlings"],
+
+["parenthesis","круглая скобка", "However, your code is more readable if you always include the parentheses", "parentheses"],
+
+["to dignify","удостаивать", "'I'm not going to dignify Jimmy Barrett with a response'", "dignify"],
+
+["heck","черт (персонаж)", "She is hot as heck", "heck"],
+
+["divider","делитель (сепаратор, делитель разряжения), перегородка", "'Rip out this awful room divider and you've got an eat in kitchen'", "divider"],
+
+["to devour","пожирать", "'The darkness will devour them all' she says", "devour"],
+
+["cub","детеныш", "She had heard the cry of her cub and was dashing to save him", "cub"],
+
+["in favor","в пользу (какой-то опции)", "Weak economic conditions and changes in laws that are not in favor of gambling", "in favor"],
+
+["to intrench","укреплять (позиции, убеждения)", "They had tools with them with which to intrench their position", "intrench"]
+
+["procedure","процедура, метод", "'Didn't you explain the voting procedure to him, Doctor?'", "procedure"],
+
+["viable","целесообразный", "'Well, I'd have to check with my lawyer, but I don't think retail therapy is a viable legal strategy'", "viable"],
+
+["preparedness","готовность", "'Gonna lecture me on military preparedness, Josh?'", "preparedness"],
+["to heed","внимать, учитывать", "'In this new land, should I ever come to you for any reason, you must heed my every request'", "heed"],
+["livid","разозлившейся, в ярости", "Almost as livid as you must have been when you missed him from five yards", "livid"],
+
+["to strip of","лишать (звания или вещи)", "'I'm stripping you of your rank'", "stripping you of"],
+
+["conscience","совесть", "'Now that you've got a death on your conscience'", "conscience"],
+
+["to amuse ","забавлять", "Everything she did seemed to amuse him, as though she were a gamboling kitten", "amuse"],
+
+["preposterous","нелепый, абсурдный", "'I'm willing to pay you a reasonable sum; but what you ask is far too much - preposterous!'", "preposterous"],
+
+["abrupt","резкий (характер), неожиданный", "She quickly pulling out a handkerchief from her pocket, wiped her eyes with an abrupt movement", "abrupt"],
+
+["farce","балаган, комедия", "'I hated her, I tell you. Our marriage was a farce from the very first day'", "farce"], 
+
+["casket","шкатулка, гроб", "'Tell them we want the best casket in the state'", "casket"],
+
+["to assess","оценивать", "'You know, you might want to wait till you're sober before you start to assess your life'", "assess"],
+
+["to resuscitate","реанимировать", "'And we tried to resuscitate them - and despite our best efforts, they died'", "resuscitate"],
+
+["to maintain ","поддерживать, обслуживать", "A crew of three cannot maintain a ship of this size without an android", "maintain"],
+
+["harvest","сбор урожая", "He moved through the bottom farms in harvest time, threshing the grain his own farm would not raise", "harvest"],
+
+["dummy","манекен", "'Are you going to stand there like a dummy?'", "dummy"],
+
+["to acknowledge","признавать, подтверждать", "He did not acknowledge this feeling, but at the bottom of his heart he loved her", "acknowledge"],
+
+["meadow","луг", "The flowers here are like paintings, the child thought, laughing as he ran across the meadow", "meadow"],
+
+["to hurl","метать, швырять", "'You do not take the trouble to go out on your balcony and hurl it into the sea!'", "hurl"],
+
+["womanizer","бабник", "'You are dishonest, greedy, selfish womanizer'", "womanizer"],
+
+["icicle","сосулька", "The drops fell very slowly, as they fall from an icicle after the sun has gone", "icicle"],
+
+["to impale","пронзить", "'I slipped on the soap and impaled meself on some scissors!'", "impaled"],
+
+["turtleneck","водолазка", "After a moment, the man in the turtleneck gave him a congenial nod", "turtleneck"],
+
+["to shatter","разбить в дребезги, раздробить, разрушить", "The ball has shattered the bone below the knee", "shattered"]
+
+["sumptuous","роскошный, пышный", "Mrs Weasley conjured up a sumptuous dinner which included all of Harry’s favourite things", "sumptuous"],
+
+["to round off","завершить", "Fred and George rounded off the evening with a display of Filibuster fireworks", "rounded off"],
+
+["cock-crow","петушиный крик (раннее время)", "They were up at cock-crow, but somehow they still seemed to have a great deal to do", "cock-crow"],
+
+["to collide","сталкиваться (физически)", "People kept colliding on the stairs, half-dressed with bits of toast in their hands", "colliding"],
+
+["stray","бездомный, заблудившийся", "Mr Weasley nearly broke his neck, tripping over a stray chicken as he crossed the yard", "stray"],
+
+["boot","багажник", "'Not a word to Molly' he whispered to Harry as he opened the boot", "boot"],
+
+["roomy","просторный, вместительный", "'I mean, you’d never know it was this roomy from the outside, would you?", "roomy"],
+
+["to trundle","катиться", "They trundled out of the yard, Harry turning back for a last look at the house", "trundled"],
+
+["to wedge","втискиваться, заклинивать (зафиксироваться)", "Harry made sure that Hedwig’s cage was safely wedged on top of his trunk", "wedged"],
+
+["indignantly","возмущенно", "Hedwig’s cage bounced onto the shiny floor and she rolled away, shrieking indignantly", "indignantly"],
+
+["tensely","напряженно", "'Can’t hear a thing' he said tensely", "tensely"],
+
+["ignition","зажигание, воспламенение", "'Check no one’s watching' said Ron, starting the ignition with another tap of his wand", "ignition"],
+
+["to pummel","бить", "Both of them pummelled the button. The car vanished. Then it flickered back again", "pummelled"],
+
+["sweeping","широкий, размашистый", "They landed smoothly and spectacularly on the sweeping lawn in front of Hogwarts castle", "sweeping"],
+
+["prospect","перспектива", "The prospect of seeing Fred and George’s jealous faces was incredible", "prospect"],
+
+["glove compartment","бардачок в авто", "With a fat pack of toffees in the glove compartment", "glove compartment"],
+
+["moor","болото", "Purplish moors, villages with tiny toy churches and a great city alive with cars like multi-coloured ants", "moors"],
+
+["to cap","увенчать (надеть сверху корону)", "It was still right below them, winding its way past a snowcapped mountain", "snowcapped"],
+
+["canopy","навес, тент, купол", "It was much darker beneath the canopy of clouds", "canopy"]
 
 ];
