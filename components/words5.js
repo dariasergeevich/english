@@ -543,6 +543,89 @@ export const words5 = [
 
 ["to cap","увенчать (надеть сверху корону)", "It was still right below them, winding its way past a snowcapped mountain", "snowcapped"],
 
-["canopy","навес, тент, купол", "It was much darker beneath the canopy of clouds", "canopy"]
+["canopy","навес, тент, купол", "It was much darker beneath the canopy of clouds", "canopy"],
+["nonplussed","сбитый с толку","completely nonplussed, harry said nothing","nonplussed"],
+
+["stood out a mile","бросается в глаза сразу («видно за милю»)","'i knew at once why you'd done it. stood out a mile'","stood out a mile"],
+
+["restorative","восстанавливающий, тонизирующий","'mandragora, is a powerful restorative' said hermione","restorative"],
+
+["tufty","хохлатый, взъерошенный","a hundred or so tufty little plants","tufty"],
+
+["unremarkable","неприметный","mandragoras looked quite unremarkable to harry","unremarkable"],
+
+["scramble","борьба, схватка","there was a scramble as everyone tried to seize a pair of earmuffs","scramble"],
+
+["mottled","пятнистый, крапчатый","he had pale green, mottled skin","mottled"],
+
+["seedling","саженец","'as our mandrakes are only seedlings, their cries won't kill yet'","seedlings"],
+
+["feeler","щупальце","she gave a sharp slap to a plant, making it draw in the long feelers to her","feelers"],
+
+["to inch","медленно продвигаться","feelers that had been inching sneakily over her shoulder","inching"],
+
+["to squirm","извиваться, корчиться","they squirmed, kicked, flailed their sharp little fists","squirmed"],
+
+["to gnash","скрежетать","they squirmed, kicked and gnashed their teeth","gnashed"],
+
+["to traipse","тащиться, бродить","they traipsed back to the castle","traipsed"],
+
+["to patch up","залатать, заделать","he had patched up his wand with some borrowed spellotape","patched up"],
+
+["wrung sponge","выжатая губка","his brain felt like a wrung sponge","wrung sponge"],
+
+["to file out","выходить","everyone filed out of the classroom except him","filed out"],
+
+["volley","залп, град","the wand let off a volley of bangs like a firecracker","volley"],
+
+["overcast","пасмурный, облачный","they finished lunch and went outside into the overcast courtyard","overcast"],
+
+["tentative","предварительный, неуверенный","he said it breathlessly, taking a tentative step forward","tentative"],
+
+["blankly","безучастно, растерянно","'a picture?' harry repeated blankly","blankly"],
+
+["to rake","сгребать, ворошить","his eyes raked harry's hairline","raked"],
+
+["scathing","едкий, язвительный","loud and scathing, draco malfoy's voice echoed around the courtyard","scathing"],
+
+["thuggish","бандитский","draco was flanked by his large and thuggish cronies, crabbe and goyle","thuggish"],
+
+["cronies","дружки, преспешники","draco was flanked by his large and thuggish cronies, crabbe and goyle","cronies"],
+
+["jovially","весело, жизнерадостно","he thundered jovially, 'shouldn't have asked! we meet again, harry!'","jovially"],
+
+["humilation","унижение","pinned to lockhart's side and burning with humiliation, harry saw malfoy","humiliation"],
+
+["paternally","по-отечески","'a word to the wise, harry' said lockhart paternally","paternally"],
+
+["deaf","глухой","deaf to harry's stammers, lockhart swept him down a corridor","deaf"],
+
+["tad","немного, капельку","'handing out signed pictures isn't sensible - looks a tad bigheaded, harry, to be frank'","tad"],
+
+["bigheaded","грубо, высокомерно","'handing out signed pictures isn't sensible - looks a tad bigheaded, harry, to be frank'","bigheaded"],
+
+["roguish","шаловливый, проказный","he gave them another roguish wink","roguish"],
+
+["disbelief","недоверие, недоумие","ron was now staring at lockhart with an expression of disbelief on his face","disbelief"],
+
+["rapt","восхищенный, увлеченный","hermione, on the other hand, was listening to lockhart with rapt attention","rapt"],
+
+["to befall","случаться, происходить","'know only that no harm can befall you whilst i am here'","befall"],
+
+["whilst","пока, в то время как","'know only that no harm can befall you whilst i am here'","whilst"],
+
+["blighters","вредитель","'devilish tricky little blighters they can be!'","blighters"],
+
+["budgie","волнистый попугайчик","voices so shrill it was like listening to a lot of budgies arguing","budgies"],
+
+["pandemonium","хаос","it was pandemonium. the pixies shot in every direction like rockets","pandemonium"],
+
+["to shower","осыпать, поливать","several shot straight through the window, showering the back row with broken glass","showering"],
+
+["to rampage","бушевать, неистовать","the rest proceeded to wreck the classroom more effectively than a rampaging rhino","rampaging"],
+
+["rhino","носорог","the rest proceeded to wreck the classroom more effectively than a rampaging rhino","rhino"],
+
+["do not have a clue","не имею малейшего понятия","'hermione, he didn't have a clue what he was doing'","he didn't have a clue"],
 
 ];

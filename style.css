@@ -505,7 +505,13 @@ left: 3%;
   font-weight: bold;
 }
 
-
+.input_phrase {
+  width: 240px;
+    height: 120px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat";
+}
 
 .rectangle {
   background-color: #A1DFB8;
