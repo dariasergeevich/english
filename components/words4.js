@@ -25,7 +25,7 @@ export const words4 = [
    ['awe', 'страх, трепет, изумление', "'It’s an Invisibility Cloak' said Ron, a look of awe on his face", "awe"],
    ['to suspend', 'приостановить, подвесить, на "s"', "His head suspended in mid-air, his body completely invisible", "suspended"],
    ['possession', 'владение, обладание', "Your father left this in my possession before he died", "possession"],
-   ['half-heartedly', 'нерешительно', "'I hate maroon' Ron moaned half-heartedly as he pulled sweater over his head", "half-heartedly"],
+   ['half-heartedly', 'нерешительно, в полсилы, без энтузиазма', "'I hate maroon' Ron moaned half-heartedly as he pulled sweater over his head", "half-heartedly"],
    ['to observe', 'наблюдать, заметить, на "o"', "'You haven’t got a letter on your sweater' George observed", "observed"],
    ['disapproving', 'неодобрительный', "Percy Weasley stuck his head through the door, looking disapproving", "disapproving"],
    ['feeble', 'хилый, немощный, на "f"', "These fantastic crackers were nothing like the feeble Muggle ones", "feeble"],

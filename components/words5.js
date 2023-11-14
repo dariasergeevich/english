@@ -627,5 +627,84 @@ export const words5 = [
 ["rhino","носорог","the rest proceeded to wreck the classroom more effectively than a rampaging rhino","rhino"],
 
 ["do not have a clue","не имею малейшего понятия","'hermione, he didn't have a clue what he was doing'","he didn't have a clue"],
+["invasion","вторжение, нападение","\"oh look, said flint. 'a pitch invasion\"","invasion"],
 
+["smugly","самодовольно","'i'm the new slytherin seeker, weasley,' said malfoy, smugly","smugly"],
+
+["to gape","разинуть рот, зевать","ron gaped, open-mouthed, at the seven superb broomsticks in front of him","gaped"],
+
+["to bid for","выкупить что-либо (на аукционе)","‘you could raffle off those cleansweep fives, i expect a museum would bid for them’","bid for"],
+
+["reluctantly","неохотно","hermione followed, somewhat reluctantly","reluctantly"],
+
+["somewhat","отчасти, в некотором роде","hermione followed, somewhat reluctantly","somewhat"],
+
+["perturbed","возмущенный, обеспокоенный","hagrid didn't seem perturbed by\nron's slug problem, which harry hastily explained","perturbed"],
+
+["to plonk","плюхаться, обрушаться","he said it cheerfully, plonking a large copper basin in front of him","plonking"],
+
+["basin","таз, емкость","he said it cheerfully, plonking a large copper basin in front of him","basin"],
+
+["to slobber","пусть слюни","his boarhound, fang, was slobbering over harry","slobbering"],
+
+["rooster","петух","growled hagrid, moving a half-plucked rooster off his scrubbed table and setting down the teapot","rooster"],
+
+["to banish","изгонять, прогонять","’an' bangin' on about some banshee he banished. if one word of it was true, i'll eat my kettle’","banished"],
+
+["magenta","пурпурный, малиновый","said hagrid proudly, making hermione go a brilliant shade of magenta","magenta"],
+
+["to retch","блевать","he retched and ducked out of sight again","retched"],
+
+["to wrench","вырывать, выворачивать","furious, harry wrenched his teeth apart","wrenched"],
+
+["genially","добродушно, сердечно","‘i'm only jokin’ he said, patting harry genially on the back","genially"],
+
+["to conceal","прятать, скрывать, маскировать","hagrid's old school wand was concealed inside it","concealed"],
+
+["deaf","глухой","he become mysteriously deaf until the subiect was changed","deaf"],
+
+["to suppress","подавлять","said ron, nervously suppressing a burp","suppressing"],
+
+["elbow grease","ручной труд","‘and no magic, weasley- elbow grease’","elbow grease"],
+
+["to loathe","ненавидеть","argus filch, the caretaker, was loathed by every student in the school","loathed"],
+
+["scallywag","проходимец, заморыш","‘ah, here's the scallywag!' he said. 'come in, harry, come in’","scallywag"],
+
+["fickle","переменчивый, капризный","‘fame's a fickle friend, harry’","fickle"],
+
+["prattle","болтовня, щебетание","something quite apart from the spitting of the dying candles and lockhart's prattle about his fans","prattle"],
+
+["bone marrow ","костный мозг","it was a voice, a voice to chill the bone-marrow, a voice of breath-taking","bone-marrow"],
+
+["drowsy","сонный, вялый","‘ perhaps you're getting a little drowsy?’","drowsy"],
+
+["slime","слизь","took ages to shift the slime out of quiddich cup","slime"],
+
+["canopy","навес, купол, свод","‘i know’ said harry, lying back in his four-poster and staring at the canopy above him","canopy"],
+
+["four-poster","кровать с балдахином","‘i know, said harry’ lying back in his four-poster and staring at the canopy above him","four-poster"],
+["to feel overhelmed","чувствовать себя загруженным","'you know, michael, when i feel overwhelmed...'","overhelmed"],
+
+["to patronize","покровительствовать, поддерживать","‘don’t patronize me, pam'","patronize"],
+
+["to kiss-up","подлизываться","'i've never been a kiss-up'","kiss-up"],
+
+["to subscribe","подписывать, присоединиться, поддерживать (идею)","'i mean, i've always subscribed to the idea that you have to be a hard-worker'","subscribed"],
+
+["mediocre","посредственный, заурядный","'you do mediocre work'","mediocre"],
+
+["violation","нарушение, несоблюдение","'please be advised\nthat it is in violation of your condominium agreement'","violation"],
+
+["to advise","сообщать, информировать, советовать","'please be advised\nthat it is in violation of your condominium agreement'","advised"],
+
+["headquarter","головной офис, штаб-квартира","'it’s a violation to conduct\na business headquartered in your residence'","headquartered"],
+
+["penalty","штраф, взыскание","'the penalty of forfeiture\nof residence is 100$'","penalty"],
+
+["forfeiture","конфискация, лишение","'the penalty of forfeiture\nof residence is 100$'","forfeiture"],
+
+["prominent","известный, заметный","'from his humble beginnings as a prominent surgeon, he risked it all to become the most successful telemarketer'","prominent"],
+
+["to flunk","провалить, завалить","'my math teacher said that i was gonna flunk out'","flunk out"],
 ];
