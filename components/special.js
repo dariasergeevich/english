@@ -310,9 +310,9 @@ export const special = [
 ["arrant","сущий, выдающийся","'the whole thing is arrant nonsense, of course'","arrant"],
 
 
-["gullible","доверчивый, наивный","'a tale told to frighten the gullible'","gullible"]]
+["gullible","доверчивый, наивный","'a tale told to frighten the gullible'","gullible"],
 
-[["to detach","отсоединить, отключить","he had swept past harry, ron and hermione and detached mrs norris from the torch bracket","detached"],
+["to detach","отсоединить, отключить","he had swept past harry, ron and hermione and detached mrs norris from the torch bracket","detached"],
 
 ["flurry","суматоха, суета","as they entered lockhart's darkened office there was a flurry of movement across the walls","flurry"],
 
