@@ -1,4 +1,21 @@
 export const words1 = [
+  ["xièxiè","谢谢","спасибо",""],
+["zàijiàn","再见","до свидания",""],
+["nián","年","год",""],
+["zhōu","周","неделя",""],
+["mèi","妹","младшая сестра",""],
+["jiě","姐","старшая сестра",""],
+["gē","哥","старший брат",""],
+
+["yùndòng","运动","спорт",""],
+["zuò","做","делать, заниматься делами, производить",""],
+
+["xīngqī","星期","неделя",""],
+["diànyīng","电影","фильм",""],
+["kàn","看","смотреть, читать",""],
+["shū","书","книга",""],
+["fàn","饭","еда",""],
+["xiǎng","想","думать, хотеть",""]
   /*
     ['daily', 'ежедневный'],
     ['courage', 'смелость'],
@@ -547,11 +564,6 @@ export const words1 = [
   ['trauma', 'травма'],
   ['to avenge', 'мстить'],
 
-
-
-
-
-  */
   ['envy', 'зависть', "'I can remember when our postal system was the envy of the world'", "envy"],
   ['joint', 'совместный', "By joint effort the bull was tied to the rail", "joint"],
   ['to pledge', 'обязаться, пообещать', "'We pledge to participate actively in analysing and debating data'", "pledge"],
@@ -649,7 +661,7 @@ export const words1 = [
   ['gift-wrapped', 'подарочная упаковка', "Peanuts, pyramided in pretty gift-wrap packages, are the symbol of fertility", "gift-wrap"],
   ['to decline', 'отклонять, на "d"', "'I decline to continue the dispute, rather than become involved in a scandal'", "decline"],
   ['insufficient', 'недостаточный, неудовлетворительный', "Insufficient knowledge of the language prevents me from questioning him properly", "Insufficient"],
-  /*['funds', 'средства'],
+  ['funds', 'средства'],
   ['scarcely', 'едва, на "s"'],
   ['fare', 'плата за проезд'],
   ['plaster', 'гипс, штукатурка'],
@@ -660,7 +672,7 @@ export const words1 = [
   ['to assume', 'предполагать, на "a"'],
   ['janitor', 'дворник'],
   ['humble', 'скромный'],
-  ['attitude', 'отношение, жизненная позиция, на "a"'],*/
+  ['attitude', 'отношение, жизненная позиция, на "a"'],
 
   ['occasionally', 'иногда, на "o"', "'I call him occasionally to ask about you'", "occasionally"],
   ['to tease', 'дразнить', "His sisters were very kind, but never bothered to tease him", "tease"],
@@ -706,6 +718,6 @@ export const words1 = [
   ['to snivel', 'хныкать, на "s"', "Great drops beat on the roof of the car. Dudley snivelled", "snivelled"],
   ['hanger', 'вешалка', "Last year, the Dursleys had given him a coat-hanger and a pair of Uncle Vernon’s old socks.", "-hanger"],
   ['to perch', 'усесться, взгромоздиться', "Perched on top of the rock was the most miserable little shack you could imagine", "Perched"],
-  ['shack', 'лачуга, на "s"', "Perched on top of the rock was the most miserable little shack you could imagine", "shack"],
+  ['shack', 'лачуга, на "s"', "Perched on top of the rock was the most miserable little shack you could imagine", "shack"],*/
   ];
   
