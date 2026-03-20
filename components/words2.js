@@ -1,4 +1,14 @@
 export const words2 = [
+  
+  
+["shāngdiàn","商店","магазин",""],
+["dōngxī","东西","вещь, предмет",""],
+["qiánmiàn","前面","перед, впереди, вначале",""],
+["yīfu","衣服","одежда",""],
+["xiē","些","немного, несколько",""],
+["nǎr","哪儿","где? куда?",""]
+  /*
+  
   ['gleefully', 'ликующе', "‘Storm forecast for tonight!’ said Uncle Vernon gleefully, clapping his hands together", "gleefully"],
   ['below', 'ниже', "A toothless old man pointed at an old rowing boat bobbing in the iron-grey water below them", "below"],
   ['to amble up', 'подниматься неторопливой походкой', "A toothless old man came ambling up to them, pointing at an old rowing boat", "ambling up"],
@@ -64,8 +74,6 @@ export const words2 = [
   ['to deduct', 'вычитать', "You pay a certain percentage, which you deduct from your trading account", "deduct"],
   ['to swamp', 'заливать, затопить', "Though bay completely swamped, the boat was nearly unharmed", "swamped"],
   ['memo', 'памятка, заметка', "'She's even send a memo telling us not to speak with the reporters'", "memo"],
-
-/*
   ['superior', 'начальник, вышестоящий'],
   ['to be in charge in', 'быть ответственным за'],
   ['to pick', 'выбирать'],
