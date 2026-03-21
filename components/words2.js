@@ -18,7 +18,11 @@ export const words2 = [
 ["kǒu","口","рот, местное слово для людей",""],
 ["nǎxiē","哪些","какие?",""],
 ["nánxìng","男性","мужской пол",""],
-["nǔxìng","女性","женский пол",""]
+["nǔxìng","女性","женский пол",""],
+["wéi","喂","эй! алло!",""],
+["yīyuàn","医院","больница",""],
+["yīshēng","医生","врач",""],
+["gǎnmào","感冒","простудиться",""]
   /*
   
   ['gleefully', 'ликующе', "‘Storm forecast for tonight!’ said Uncle Vernon gleefully, clapping his hands together", "gleefully"],
