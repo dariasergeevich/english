@@ -1,4 +1,6 @@
 export const words3 = [
+  
+  /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
   ['to remain', 'оставаться, находиться', "Characters remain constant throughout a whole lifetime", "remain"],
@@ -60,7 +62,6 @@ export const words3 = [
   ['to brew', 'варить', "I can teach you how to bottle fame, brew glory", "brew"],
   ['fame', 'слава, на «f»', "I can teach you how to bottle fame, brew glory", "fame"],
   ['glory', 'слава', "I can teach you how to bottle fame, brew glory", "glory"],
-/*
   ['dunderhead', 'болван, на «d»'],
   ['to exchange', 'обменяться, на «e»'],
   ['infusion', 'настой, отвар'],
