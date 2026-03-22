@@ -1,4 +1,4 @@
-export const special =
+export const special =[
    ["yī","一","один",""],
 
 ["èr","二","два",""],
