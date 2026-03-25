@@ -36,7 +36,15 @@ export const words3 = [
 ["zǎoshàng","早上","утро",""],
 ["shǎo","少","мало, редко ",""],
 ["fēnzhōng","分钟","минута",""],
-["tiān","天","день",""]
+["tiān","天","день",""],
+["xǐhuān","喜欢","нравиться, любить",""],
+["lǎng","冷","холодный",""],
+["rè","热","горячий",""],
+["xiàyǔ","下雨","идет дождь",""],
+["tiānqì","天气","погода",""],
+["jiǔdiàn","酒店","отель",""],
+["shuìjiào","睡觉","спать",""],
+["dào","到","достигать (места), прибывать ",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
