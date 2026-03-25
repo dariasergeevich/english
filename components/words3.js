@@ -29,6 +29,14 @@ export const words3 = [
 ["diànshì","电视","телевизор",""],
 ["zhù","住","жить, проживать",""],
 ["rènshi","认识","быть знакомым, знать кого-то",""],
+["jīchǎng","机场","аэропорт",""],
+["fēijī","飞机","самолет",""],
+["chūzūchē","出租车","такси",""],
+["zuò","坐","сидеть, ехать на транспорте",""],
+["zǎoshàng","早上","утро",""],
+["shǎo","少","мало, редко ",""],
+["fēnzhōng","分钟","минута",""],
+["tiān","天","день",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
