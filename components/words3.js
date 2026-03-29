@@ -55,7 +55,12 @@ export const words3 = [
 ["yòu","右","право (сторона)",""],
 ["chāoshì","超市","супермаркет",""],
 ["gōngsī","公司","компания, фирма",""],
-["shēnghuó","生活","жизнь",""]
+["shēnghuó","生活","жизнь",""],
+["kěyǐ","可以","можно (разрешение), могу",""],
+["kěnéng","可能","может быть",""],
+["bùguò","不过","но (нейтральное)",""],
+["kěshì","可是","но (к сожалению, возможно)",""],
+["dànshì","但是","но (но зато, противопоставление)",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
