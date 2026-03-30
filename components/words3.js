@@ -46,7 +46,8 @@ export const words3 = [
 ["wèizhì","位置","местоположение (место + ставить)",""],
 ["yuán","元","юань",""],
 ["shāfā","沙发","диван",""],
-["yīnwéi","因为","потому что (ведь + для)",""]
+["yīnwéi","因为","потому что (ведь + для)",""],
+["suǒyǐ","所以","поэтому",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
