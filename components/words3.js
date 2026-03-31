@@ -48,7 +48,12 @@ export const words3 = [
 ["shāfā","沙发","диван",""],
 ["yīnwéi","因为","потому что (ведь + для)",""],
 ["suǒyǐ","所以","поэтому",""],
-["xuéxí","学习","учиться",""]
+["xuéxí","学习","учиться",""],
+["tīng","听","слушать",""],
+["shíhou","时候","промежуток времени",""],
+["dú","读","читать",""],
+["fànguǎn","饭馆","ресторан",""],
+["méiguānxì","没关系","ничего страшного, пустяки",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
