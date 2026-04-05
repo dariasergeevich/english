@@ -38,7 +38,16 @@ export const words3 = [
 ["dǎdiànhuà","打电话","звонить по телефону ",""],
 ["shuōhuà","说话","разговаривать",""],
 ["tài","太","слишком, черезчур",""],
-["xiě","写","писать",""]
+["xiě","写","писать",""],
+["zhīdào","知道","знать, понимать",""],
+["bùxíng","不行","нельзя",""],
+["máng","忙","занятый",""],
+["kùn","困","хотеть спать",""],
+["suīrán","虽然","так как, поскольку (с 但是）",""],
+["érqiě","而且","но и… (с 不过）",""],
+["xiě","写","писать",""],
+["xīn","新","новый, свежий",""]
+["cōngmíng","聪明","умный",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
