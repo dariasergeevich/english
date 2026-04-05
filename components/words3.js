@@ -46,7 +46,7 @@ export const words3 = [
 ["suīrán","虽然","так как, поскольку (с 但是）",""],
 ["érqiě","而且","но и… (с 不过）",""],
 ["xiě","写","писать",""],
-["xīn","新","новый, свежий",""]
+["xīn","新","новый, свежий",""],
 ["cōngmíng","聪明","умный",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
