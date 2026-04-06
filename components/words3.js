@@ -47,7 +47,12 @@ export const words3 = [
 ["érqiě","而且","но и… (с 不过）",""],
 ["xiě","写","писать",""],
 ["xīn","新","новый", "свежий",""],
-["cōngmíng","聪明","умный",""]
+["cōngmíng","聪明","умный",""],
+["yě","也","тоже",""],
+["xìng","姓","фамилия",""],
+["jièshào","介绍","представлять (знакомить)",""],
+["pángbiān","旁边","рядом, сбоку",""],
+["nǔhái","女孩","",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
