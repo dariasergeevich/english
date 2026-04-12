@@ -96,6 +96,7 @@ export const words2 = [
 ["shēnghuó","生活","жизнь",""],
 ["yuán","元","юань",""],
 ["shāfā","沙发","диван",""],
+["cài","菜","блюдо, овощи",""],
   /*
   
   ['gleefully', 'ликующе', "‘Storm forecast for tonight!’ said Uncle Vernon gleefully, clapping his hands together", "gleefully"],
