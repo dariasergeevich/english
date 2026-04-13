@@ -60,7 +60,12 @@ export const words3 = [
 ["mǎ","马","лошадь",""],
 ["liǎojiě","了解","понял, понятно",""],
 ["míngle","明了","ясно, понятно",""],
-["jiāngyào","将要","маркер будущего времени",""]
+["jiāngyào","将要","маркер будущего времени",""],
+["chūshēng","出生","рождаться",""],
+["chéngshì","城市","город",""],
+["zìjǐde","自己的","свой, собственный",""],
+["yǔyán","语言","язык (речь)",""],
+["lǔyóu","旅游","путешествовать (дорога + плыть)",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
