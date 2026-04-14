@@ -65,7 +65,13 @@ export const words3 = [
 ["chéngshì","城市","город",""],
 ["zìjǐde","自己的","свой, собственный",""],
 ["yǔyán","语言","язык (речь)",""],
-["lǔyóu","旅游","путешествовать (дорога + плыть)",""]
+["lǔyóu","旅游","путешествовать (дорога + плыть)",""],
+["qiānbǐ","铅笔","карандаш",""],
+["gāo","高","высокий",""],
+["cháng","长","длинный, долгий",""],
+["duǎn","短","короткий",""],
+["ǎi","矮","низкий, невысокий",""],
+["bǐ","比","по сравнению",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
