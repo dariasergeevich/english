@@ -1,5 +1,14 @@
 export const words4 = [
+   
+   ["yuǎn","远","далекий, дальний",""],
+["měi","每","каждый, всякий",""],
+["shàngbān","上班","ходить на работу",""],
+["xiǎoshí","小时","час",""],
+["gōnggòngqìchē","公共汽车","общественный автобус",""],
+["dìtiě","地铁","метро",""],
+["mén","门","дверь, ворота",""]
    //hp chapter 12
+/*
    ['to smirk', 'ухмыляться', "Malfoy, Crabbe and Goyle pushed roughly past the tree, scattering needles everywhere and smirking", "smirking"],
    ['spectacular', 'впечатляюще', "The Hall looked spectacular. Festoons of holly and mistletoe hung all around the walls", "spectacular"],
    ['festoon', 'гирлянда', "The Hall looked spectacular. Festoons of holly and mistletoe hung all around the walls", "Festoons"],
@@ -76,7 +85,6 @@ export const words4 = [
 
 
    //office s3e3
-   /*
    ['coup', 'переворот (государственный), удачный ход'],
    ['blues', 'хандра'],
    ['various', 'разнообразный'],
