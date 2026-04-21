@@ -9,7 +9,12 @@ export const words4 = [
 ["mén","门","дверь, ворота",""],
 ["qǐchuáng","起床","вставать, просыпаться",""],
 ["yòng","用","использовать, применять",""],
-["pǔtōng","普通","обычный",""]
+["pǔtōng","普通","обычный",""],
+["wèntí","问题","вопрос, проблема",""],
+["xuě","雪","снег",""],
+["kè","课","урок",""],
+["huídá","回答","ответ",""],
+["yánsè","颜色","цвет",""]
    //hp chapter 12
 /*
    ['to smirk', 'ухмыляться', "Malfoy, Crabbe and Goyle pushed roughly past the tree, scattering needles everywhere and smirking", "smirking"],
