@@ -1,4 +1,5 @@
 export const words5 = [
+    /*
     ["to desecrate","осквернять", "How are we to trust men like these who kill without conscience, who desecrate and pollute sacred places?", "desecrate"],
     
     ["to blackmail","шантажировать, вымогать", "I got it from someone who is trying to blackmail my father for a ton of money", "blackmail"],
@@ -707,4 +708,5 @@ export const words5 = [
 ["prominent","известный, заметный","'from his humble beginnings as a prominent surgeon, he risked it all to become the most successful telemarketer'","prominent"],
 
 ["to flunk","провалить, завалить","'my math teacher said that i was gonna flunk out'","flunk out"],
+*/
 ];
