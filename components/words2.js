@@ -180,7 +180,11 @@ export const words2 = [
 ["jīn","斤","дзинь (0,6 кг)",""],
 ["bǎi","百","сто",""],
 ["yǒuxiē","有些","некоторые (люди), 有的",""],
-["hǎowánr","好玩儿","забавный, интересный ",""]
+["hǎowánr","好玩儿","забавный, интересный ",""],
+["zhàngfu","丈夫","муж",""],
+["xiāngjiāo","香蕉","банан",""],
+["yú","鱼","рыба",""],
+["yángròu","羊肉","баранина",""]
   /*
   
   ['gleefully', 'ликующе', "‘Storm forecast for tonight!’ said Uncle Vernon gleefully, clapping his hands together", "gleefully"],
