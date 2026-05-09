@@ -1,5 +1,11 @@
 export const words3 = [
-
+["lèi","糸","уставать",""],
+["jìn","进","входить, вступать",""],
+["biéde","别的","другой (another)",""],
+["fēng","风","ветер",""],
+["dìtú","地图","карта",""],
+["jìde","记得","вспомнить",""],
+["cì","次","раз",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
