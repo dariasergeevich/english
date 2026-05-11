@@ -22,6 +22,9 @@ export const words3 = [
 ["sòng","送","дарить, доставлять (проверить иероглиф)",""],
 ["yéye","爷爷","дедушка (по папе)",""],
 ["zuì ","最","самый",""],
+["jiāo","教","обучать, учить кого-то (教学楼 – учебное заведение, корпус)",""],
+["qǐngjià","请假","просить об отпуске",""],
+["zhòng ","重","тяжесть (вес), важный, 重要 - важный",""],
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
