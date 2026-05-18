@@ -67,7 +67,8 @@ export const words3 = [
 ["míngchēng","名称","название",""],
 ["dōngtiān","冬天","зима",""],
 ["qiūtiān","秋天","осень",""],
-["chūntiān","春天","весна",""]
+["chūntiān","春天","весна",""],
+["láizì","来自","из (из россии)",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
