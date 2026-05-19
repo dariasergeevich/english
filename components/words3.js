@@ -68,7 +68,10 @@ export const words3 = [
 ["dōngtiān","冬天","зима",""],
 ["qiūtiān","秋天","осень",""],
 ["chūntiān","春天","весна",""],
-["láizì","来自","из (из россии)",""]
+["láizì","来自","из (из россии)",""],
+["bànggōngshì","办公室","офис",""],
+["gōngyuán","公园","парк",""],
+["jiēdào","街道","улица (стрит)",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
