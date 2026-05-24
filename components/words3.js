@@ -106,7 +106,7 @@ export const words3 = [
 ["luótuò","骆驼","верблюд",""],
 ["yǒuqián","有钱","богатый",""],
 ["yǐqián","以前","раньше", ""],
-["tīzúquí","踢足球","футбол",""],
+["tīzúqiú","踢足球","футбол",""],
 ["tiàowǔ","跳舞","танцевать",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
