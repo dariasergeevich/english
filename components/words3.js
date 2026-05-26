@@ -120,7 +120,13 @@ export const words3 = [
 ["huàn","换","обменять, менять",""],
 ["jìsuànjī","计算机","компьютер",""],
 ["pà","怕","бояться, опасаться",""],
-["qiān","千","тысяча",""]
+["qiān","千","тысяча",""],
+["xīnqíng","心情","настроение",""],
+["guāfēng","刮风","дует ветер",""],
+["shǒudū","首都","столица",""],
+["céng","层","слой, этаж",""],
+["diàntī","电梯","лифт",""],
+["xiàngmù","项目","проект",""],
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
