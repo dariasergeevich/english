@@ -127,6 +127,12 @@ export const words3 = [
 ["céng","层","слой, этаж",""],
 ["diàntī","电梯","лифт",""],
 ["xiàngmù","项目","проект",""],
+["tánpàn","谈判","вести переговоры",""],
+["zhíyè","职业","профессия, род занятий",""],
+["liúxíng","流行","популярный, распространенный",""],
+["jìjié","季节","сезон, время года",""],
+["fàngsōng","放松","расслабляться, отдыхать",""],
+["yóuyǒng","游泳","плавать",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
