@@ -184,7 +184,13 @@ export const words3 = [
 ["wúliáo","无聊","скучно",""],
 ["ěxin","恶心","мерзкий, тошнит",""],
 ["葡萄","pútao","виноград",""],
-["yǒngqì","勇气","смелость",""]
+["yǒngqì","勇气","смелость",""],
+["guòqù","过去","в прошлом, переходить через",""],
+["kùzi","裤子","брюки",""],
+["fǎguó","法国","франция",""],
+["tàiguó","泰国","тайланд",""],
+["lǐwù","礼物","подарок",""],
+["zhème","这么","так (много, сильно, мало)",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
