@@ -267,7 +267,8 @@ export const words3 = [
 ["zhuānjiā","专家","специалист, эксперт",""],
 ["bàozhǐ","报纸","газета",""],
 ["shǒubiǎo","手表","наручные часы (счетное слово для часов 快）",""],
-["jiànzào","建造","строить",""]
+["jiànzào","建造","строить",""],
+["nǔlì","努力","стараться",""]
   /*
   ['gaunt', 'тощий, худой, на "g"', "Harry saw a horrible ghost sitting there, with gaunt face and robes stained with silver blood", "gaunt"],
   ['remains', 'остатки', "The remains of the food faded from the plates", "remains"],
