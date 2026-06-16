@@ -87,7 +87,11 @@ export const words4 = [
 ["bàozhǐ","报纸","газета",""],
 ["shǒubiǎo","手表","наручные часы (счетное слово для часов 快）",""],
 ["jiànzào","建造","строить",""],
-["nǔlì","努力","стараться",""]
+["nǔlì","努力","стараться",""],
+["xīnwén","新闻","новости",""],
+["wǎnggòu","网购","покупать онлайн",""],
+["cuī","催","торопить",""],
+["mánglù","忙碌","занятой",""]
    //hp chapter 12
 /*
    ['to smirk', 'ухмыляться', "Malfoy, Crabbe and Goyle pushed roughly past the tree, scattering needles everywhere and smirking", "smirking"],
