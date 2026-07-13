@@ -1,5 +1,6 @@
 export const words5 = [
-    ["gèzi","个子","рост\n他的个子很高","个子"],
+    ["gèzi","个子",`рост
+    他的个子很高`,"个子"],
     /*
     ["to desecrate","осквернять", "How are we to trust men like these who kill without conscience, who desecrate and pollute sacred places?", "desecrate"],
     
