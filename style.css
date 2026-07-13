@@ -494,6 +494,7 @@ left: 3%;
 }
 
 .phrase {
+  white-space: pre-wrap;
   font-family: "Montserrat";
   text-align: center;
   width: 280px;
@@ -506,6 +507,7 @@ left: 3%;
 }
 
 .input_phrase {
+    white-space: pre-wrap;
   width: 240px;
     height: 120px;
     font-size: 16px;
