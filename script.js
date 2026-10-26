@@ -30,7 +30,7 @@ export function chooseArr() {
   else {return special}
 }
 
-//вставка шаблона input для каждый буквы (исправлен id)
+//вставка шаблона input для каждый буквы
 function getTemplate(id) { 
   const newInput = document 
   .querySelector('.template') 
@@ -46,15 +46,17 @@ export function getRandomWord(words) {
   let randIndex = Math.floor(Math.random() * words.length);
   const data = words[randIndex];
 
-  // Выводим на экран само слово (иероглифы) и индекс
+  // Выводим на экран перевод (data[1]) и пиньинь/фразу (data[0])
   constants.word.textContent = data[1]; 
   constants.engWord.textContent = data[0]; 
   constants.word.setAttribute('index', randIndex);
   
-  // Выводим фразу с выделенным словом
-  if (data[2]) {
+  // Выводим фразу с выделенным словом (data[2] и data[3])
+  if (data[2] && data[3]) {
     let phraseBold = data[2].replace(data[3], `<span class="span">${data[3]}</span>`);
     constants.phrase.innerHTML = phraseBold;
+  } else if (data[2]) {
+    constants.phrase.innerHTML = data[2];
   }
 
   // Отрисовываем карточку
@@ -67,16 +69,16 @@ export function getRandomWord(words) {
   return data[0];
 }
 
-// Новая функция для отрисовки картинки и поля ввода
+// Отрисовка карточки
 function renderWordCard(data) {
-  // data[0] - фраза целиком, data[1] - слово, data[4] - картинка
-  const [fullPhrase, singleWord, translation, keyword, image] = data;
+  // data[0] - пиньинь или фраза, data[1] - слово, data[4] - картинка
+  const [baseText, singleWord, translation, keyword, image] = data;
 
   constants.inputArr.length = 0;
   document.querySelector('.input_container').innerHTML = '';
 
+  // Если есть картинка — включаем новый режим
   if (image) {
-    // --- РЕЖИМ КАРТИНКИ ---
     const img = document.createElement('img');
     img.src = image;
     img.className = 'word-image';
@@ -87,14 +89,15 @@ function renderWordCard(data) {
     input.type = 'text';
     input.className = 'input_letter input_word';
     input.placeholder = 'введите фразу';
-    input.dataset.answer = fullPhrase; // Сохраняем правильный ответ (всю фразу)
+    input.dataset.answer = baseText; // Сохраняем правильный ответ (всю фразу)
     document.querySelector('.input_container').append(input);
 
     constants.inputArr.push(input);
     input.focus();
   } else {
-    // --- СТАРЫЙ РЕЖИМ (если картинки нет) ---
-    const wordArr = singleWord.split('');
+    // --- СТАРЫЙ РЕЖИМ (по буквам) ---
+    // В старых массивах пиньинь лежит в data[0] (baseText)
+    const wordArr = baseText.split('');
     wordArr.forEach((ch, i) => {
       const wordInput = getTemplate(`letter-${i}`);
       constants.inputArr.push(wordInput);
