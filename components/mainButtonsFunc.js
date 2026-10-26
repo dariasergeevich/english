@@ -1,33 +1,47 @@
-//перенос курсора вперед
 import { constants } from "./constants.js";
 import {chooseArr, getRandomWord} from "../script.js"
 import { deleteWords } from "././deleteWords.js";
 import {to} from './cursorFunc.js'
 
-
-export function checkAnswer() { //провеяет соотвествие английского слова и поля ввода
+export function checkAnswer() { 
   constants.engWord.classList.remove('hidden')
  
-let inputLetterArr = [];
+  let inputLetterArr = [];
+  let single = false;
 
-for (let i = 0; i < constants.inputArr.length; i += 1) {
-  inputLetterArr.push(constants.inputArr[i].value);
-  constants.inputArr[i].setAttribute('disabled', 'true')
-}
+  // Проверяем, в режиме ли мы картинки (один инпут)
+  if (constants.inputArr.length === 1 && constants.inputArr[0].dataset.answer) {
+    single = true;
+    inputLetterArr.push(constants.inputArr[0].value);
+    constants.inputArr[0].setAttribute('disabled', 'true');
+  } else {
+    // Старый режим (много инпутов)
+    for (let i = 0; i < constants.inputArr.length; i += 1) {
+      inputLetterArr.push(constants.inputArr[i].value);
+      constants.inputArr[i].setAttribute('disabled', 'true')
+    }
+  }
 
-let inputWord = inputLetterArr.join('');
+  let inputWord = inputLetterArr.join('');
+  let isCorrect = false;
 
+  if (single) {
+    // Строгое сравнение для фразы (без учета регистра, но с обрезкой пробелов)
+    isCorrect = inputWord.trim() === constants.inputArr[0].dataset.answer.trim();
+  } else {
+    // Старая проверка для пиньиня
+    isCorrect = inputWord.toLowerCase() === constants.engWord.textContent;
+  }
 
-if (inputWord.toLowerCase() === constants.engWord.textContent) {
-  constants.comment.textContent = 'Success!';
-  constants.comment.classList.add('green');
-  constants.comment.classList.remove('red');
-  constants.correctCount.textContent = Number(constants.correctCount.textContent) + 1;
-  constants.buttonCheck.setAttribute('disabled', '');
-  constants.buttonCheck.classList.add('disabled');
+  if (isCorrect) {
+    constants.comment.textContent = 'Success!';
+    constants.comment.classList.add('green');
+    constants.comment.classList.remove('red');
+    constants.correctCount.textContent = Number(constants.correctCount.textContent) + 1;
+    constants.buttonCheck.setAttribute('disabled', '');
+    constants.buttonCheck.classList.add('disabled');
     deleteWord ()
-    
-  }else{
+  } else {
     constants.comment.textContent = 'Wrong :(';
     constants.comment.classList.add('red');
     constants.comment.classList.remove('green');
@@ -39,64 +53,46 @@ if (inputWord.toLowerCase() === constants.engWord.textContent) {
   constants.buttonCheck.classList.add('hidden');
   constants.buttonNext.classList.remove('hidden');
   constants.phrase.classList.remove('hidden');
-  
 }
-
 
 //удаление угаданного слова из массива
 function deleteWord (words) {
   words = chooseArr()
-
   const index = constants.word.getAttribute('index');
-  deleteWords.push(words[index])
-words.splice(index, 1);
+  if (index !== null) {
+    deleteWords.push(words[index])
+    words.splice(index, 1);
+  }
 }
 
-
-  export function next(words) {
-    constants.inputArr.length = 0;
-    document.querySelector('.input_container').innerHTML = '';
-    
-  
-    constants.buttonCheck.removeAttribute('disabled');
-    constants.buttonCheck.classList.remove('disabled')
-    
-    if (constants.input.value.toLowerCase() != constants.engWord.textContent && constants.comment.textContent === ''){
-      constants.wrongCount.textContent = Number(constants.wrongCount.textContent) + 1;
-    }
-    
-    if (constants.input.value.toLowerCase() === constants.engWord.textContent && constants.comment.textContent === ''){
-      constants.correctCount.textContent = Number(constants.correctCount.textContent) + 1;
-      deleteWord()
-    }
-  
-    constants.engWord.classList.add('hidden');
-    constants.comment.textContent = '';
-    constants.input.value = '';
-    constants.engWord.textContent = '';
-  
-    constants.buttonCheck.classList.remove('hidden');
-    constants.buttonNext.classList.add('hidden');
-    constants.phrase.classList.add('hidden');
-  
-    for (let i = 0; i < constants.inputArr.length; i += 1) {
-      constants.inputArr[i].removeAttribute('disabled')
-    }
-  }
-
-  export function returnToMenu (words) {
-    constants.inputArr.length = 0;
+export function next(words) {
+  constants.inputArr.length = 0;
   document.querySelector('.input_container').innerHTML = '';
   
-    
+  constants.buttonCheck.removeAttribute('disabled');
+  constants.buttonCheck.classList.remove('disabled')
   
-    words = chooseArr()
-    constants.menu.classList.add('flex')
-    deleteWords.forEach(function(item) {
-  words.push(item)
+  // Старый блок с constants.input.value УДАЛЕН, так как он конфликтовал с новым режимом
+
+  constants.engWord.classList.add('hidden');
+  constants.comment.textContent = '';
+  constants.engWord.textContent = '';
+  
+  constants.buttonCheck.classList.remove('hidden');
+  constants.buttonNext.classList.add('hidden');
+  constants.phrase.classList.add('hidden');
+}
+
+export function returnToMenu (words) {
+  constants.inputArr.length = 0;
+  document.querySelector('.input_container').innerHTML = '';
+  
+  words = chooseArr()
+  constants.menu.classList.add('flex')
+  
+  deleteWords.forEach(function(item) {
+    words.push(item)
   })
-  
-  
   
   deleteWords.length = 0;
   constants.correctCount.textContent = '0';
@@ -121,4 +117,5 @@ words.splice(index, 1);
   constants.buttonArr3.classList.remove('click');
   constants.buttonArr4.classList.remove('click');
   constants.buttonArr5.classList.remove('click');
-  }
+  constants.buttonSpecial.classList.remove('click'); // Добавил сброс для кнопки special
+}
