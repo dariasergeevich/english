@@ -1,4 +1,4 @@
-mport { constants } from "./constants.js";
+import { constants } from "./constants.js";
 import {chooseArr, getRandomWord} from "../script.js"
 import { deleteWords } from "././deleteWords.js";
 import {to} from './cursorFunc.js'
