@@ -1,4 +1,4 @@
-import { constants } from "./constants.js";
+mport { constants } from "./constants.js";
 import {chooseArr, getRandomWord} from "../script.js"
 import { deleteWords } from "././deleteWords.js";
 import {to} from './cursorFunc.js'
@@ -6,31 +6,26 @@ import {to} from './cursorFunc.js'
 export function checkAnswer() { 
   constants.engWord.classList.remove('hidden')
  
-  let inputLetterArr = [];
-  let single = false;
+  let isCorrect = false;
 
-  // Проверяем, в режиме ли мы картинки (один инпут)
+  // Проверяем, в режиме ли мы картинки (один инпут и есть dataset.answer)
   if (constants.inputArr.length === 1 && constants.inputArr[0].dataset.answer) {
-    single = true;
-    inputLetterArr.push(constants.inputArr[0].value);
+    const inputWord = constants.inputArr[0].value.trim();
     constants.inputArr[0].setAttribute('disabled', 'true');
+    
+    // Строгое сравнение для фразы
+    isCorrect = inputWord === constants.inputArr[0].dataset.answer.trim();
   } else {
     // Старый режим (много инпутов)
+    let inputLetterArr = [];
     for (let i = 0; i < constants.inputArr.length; i += 1) {
       inputLetterArr.push(constants.inputArr[i].value);
       constants.inputArr[i].setAttribute('disabled', 'true')
     }
-  }
-
-  let inputWord = inputLetterArr.join('');
-  let isCorrect = false;
-
-  if (single) {
-    // Строгое сравнение для фразы (без учета регистра, но с обрезкой пробелов)
-    isCorrect = inputWord.trim() === constants.inputArr[0].dataset.answer.trim();
-  } else {
-    // Старая проверка для пиньиня
-    isCorrect = inputWord.toLowerCase() === constants.engWord.textContent;
+    let inputWord = inputLetterArr.join('');
+    
+    // Старая проверка (сравниваем с пиньинем в engWord, не забываем про toLowerCase)
+    isCorrect = inputWord.toLowerCase() === constants.engWord.textContent.toLowerCase();
   }
 
   if (isCorrect) {
@@ -40,7 +35,7 @@ export function checkAnswer() {
     constants.correctCount.textContent = Number(constants.correctCount.textContent) + 1;
     constants.buttonCheck.setAttribute('disabled', '');
     constants.buttonCheck.classList.add('disabled');
-    deleteWord ()
+    deleteWord()
   } else {
     constants.comment.textContent = 'Wrong :(';
     constants.comment.classList.add('red');
@@ -72,8 +67,6 @@ export function next(words) {
   constants.buttonCheck.removeAttribute('disabled');
   constants.buttonCheck.classList.remove('disabled')
   
-  // Старый блок с constants.input.value УДАЛЕН, так как он конфликтовал с новым режимом
-
   constants.engWord.classList.add('hidden');
   constants.comment.textContent = '';
   constants.engWord.textContent = '';
@@ -117,5 +110,5 @@ export function returnToMenu (words) {
   constants.buttonArr3.classList.remove('click');
   constants.buttonArr4.classList.remove('click');
   constants.buttonArr5.classList.remove('click');
-  constants.buttonSpecial.classList.remove('click'); // Добавил сброс для кнопки special
+  constants.buttonSpecial.classList.remove('click'); 
 }
